@@ -1,0 +1,74 @@
+@startuml
+
+@startuml
+
+'interface PaymentStrategy {
+'    +info(amount:double):String
+'}
+'
+'class CashStrategy {
+'    +info(amount:double):String
+'}
+'
+'class CreditCardStrategy {
+'    -name:String
+'    -cardNumber:String
+'    -cvv:int
+'    -expiryDate:String
+'    +CreditCardStrategy(name:String, cardNumber:String, cvv:int, expiryDate:Date)
+'    +info(amount:double):String
+'}
+
+class Orders {
+    -orderItems:List
+    +Orders(orderItems:OrderItems)
+    +addItems(orderItems:OrderItems):void
+    +removeItems(orderItems:OrderItems):void
+    +getOrderItems():List
+    +calculateTotal():double
+}
+
+class OrderItems {
+    -itemCode:String
+    -price:double
+    +OrderItems(itemCode:String, price:double)
+    +getItemCode():String
+    +getPrice():double
+}
+
+class Customers {
+    -name:String
+    -email:String
+    -contact:String
+    -address:String
+    -orders:Orders
+    +Customers(name:String, email:String, contact:String, address:String, orders:Orders)
+    +getName():String
+    +getEmail():String
+    +getContact():String
+    +getAddress():String
+    +getOrders():Orders
+    +pay(amount:double):String
+}
+
+'PaymentStrategy <|.. CashStrategy
+'PaymentStrategy <|.. CreditCardStrategy
+'Orders *-- PaymentStrategy
+Orders "1" -- "Many" OrderItems : Has
+Customers *-- Orders
+
+'enum TimeUnit {
+'DAYS
+'HOURS
+'MINUTES
+'}
+
+@enduml
+
+'enum TimeUnit {
+'DAYS
+'HOURS
+'MINUTES
+'}
+
+@enduml
