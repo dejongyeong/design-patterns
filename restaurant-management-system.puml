@@ -21,11 +21,14 @@
 
 class Orders {
     -orderItems:List
+    -paymentMethod:PaymentMethod
     +Orders(orderItems:OrderItems)
     +addItems(orderItems:OrderItems):void
     +removeItems(orderItems:OrderItems):void
     +getOrderItems():List
-    +calculateTotal():double
+    +getPaymentMethod():String
+    -calculateTotal():double
+    +pay():void
 }
 
 class OrderItems {
@@ -48,7 +51,11 @@ class Customers {
     +getContact():String
     +getAddress():String
     +getOrders():Orders
-    +pay(amount:double):void
+}
+
+enum PaymentMethod {
+    CASH
+    CARD
 }
 
 'PaymentStrategy <|.. CashStrategy
@@ -56,12 +63,7 @@ class Customers {
 'Orders *-- PaymentStrategy
 Orders "1" -- "Many" OrderItems : Has
 Customers *-- Orders
-
-'enum TimeUnit {
-'DAYS
-'HOURS
-'MINUTES
-'}
+Orders o-- PaymentMethod
 
 @enduml
 
