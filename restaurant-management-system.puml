@@ -21,14 +21,11 @@
 
 class Orders {
     -orderItems:List
-    -paymentMethod:PaymentMethod
     +Orders(orderItems:OrderItems)
     +addItems(orderItems:OrderItems):void
     +removeItems(orderItems:OrderItems):void
     +getOrderItems():List
-    +getPaymentMethod():String
-    -calculateTotal():double
-    +pay():void
+    +calculateTotal():double
 }
 
 class OrderItems {
@@ -45,12 +42,15 @@ class Customers {
     -contact:String
     -address:String
     -orders:Orders
-    +Customers(name:String, email:String, contact:String, address:String, orders:Orders)
+    -paymentMethod:PaymentMethod
+    +Customers(name:String, email:String, contact:String, address:String, orders:Orders, paymentMethod:PaymentMethod)
     +getName():String
     +getEmail():String
     +getContact():String
     +getAddress():String
     +getOrders():Orders
+    +getPaymentMethod():PaymentMethod
+    +pay():void
 }
 
 enum PaymentMethod {
@@ -63,7 +63,7 @@ enum PaymentMethod {
 'Orders *-- PaymentStrategy
 Orders "1" -- "Many" OrderItems : Has
 Customers *-- Orders
-Orders o-- PaymentMethod
+Customers -- PaymentMethod
 
 @enduml
 
