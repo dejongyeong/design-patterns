@@ -48,7 +48,7 @@ class Customers {
     +getContact():String
     +getAddress():String
     +getOrders():Orders
-    +pay(amount:double):String
+    +pay(amount:double):void
 }
 
 'PaymentStrategy <|.. CashStrategy
