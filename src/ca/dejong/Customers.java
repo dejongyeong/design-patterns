@@ -11,14 +11,14 @@ public class Customers {
     private String contact;
     private String address;
     private Orders order;
-    private PaymentMethod paymentMethod;
+    private PaymentStrategy paymentStrategy;
 
-    public Customers(String name, String contact, String address, Orders order, PaymentMethod paymentMethod) {
+    public Customers(String name, String contact, String address, Orders order, PaymentStrategy paymentStrategy) {
         this.name = name;
         this.contact = contact;
         this.address = address;
         this.order = order;
-        this.paymentMethod = paymentMethod;
+        this.paymentStrategy = paymentStrategy;
     }
 
     /* Getters Method */
@@ -30,14 +30,14 @@ public class Customers {
 
     public Orders getOrder() { return order; }
 
-    public PaymentMethod getPaymentMethod() { return paymentMethod; }
+    public PaymentStrategy getPaymentStrategy() { return paymentStrategy; }
 
     /* Payment - Either by card or cash */
     public void pay() {
-        if(paymentMethod == PaymentMethod.CASH) {
-            System.out.println("Paid By: " + paymentMethod + "\nTotal: " + order.calculateTotal());
+        if(paymentStrategy == PaymentStrategy.CASH) {
+            System.out.println("Paid By: " + paymentStrategy + "\nTotal: " + order.calculateTotal());
         } else {
-            System.out.println("Paid By: " + paymentMethod + "\nTotal: " + order.calculateTotal());
+            System.out.println("Paid By: " + paymentStrategy + "\nTotal: " + order.calculateTotal());
         }
     }
 

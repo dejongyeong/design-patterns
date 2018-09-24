@@ -6,9 +6,10 @@
 import ca.dejong.Customers;
 import ca.dejong.OrderItems;
 import ca.dejong.Orders;
-import ca.dejong.PaymentMethod;
+import ca.dejong.PaymentStrategy;
 
 import java.util.List;
+
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
@@ -30,7 +31,7 @@ public class CustomersTest {
         ordersItem.add(new OrderItems("IB03", 12.4));
 
         orders = new Orders(ordersItem);
-        customers = new Customers("Joe", "0834124625", "Tralee", orders, PaymentMethod.CASH);
+        customers = new Customers("Joe", "0834124625", "Tralee", orders, PaymentStrategy.CASH);
     }
 
     /** Positive Testing **/
@@ -38,7 +39,7 @@ public class CustomersTest {
     public void testPayPositive() {
 
         String expected = "Paid By: CASH" + "\nTotal: 37.6";
-        String actual = "Paid By: " + customers.getPaymentMethod() + "\nTotal: " + orders.calculateTotal();
+        String actual = "Paid By: " + customers.getPaymentStrategy() + "\nTotal: " + orders.calculateTotal();
 
         assertEquals(expected, actual);
     }
@@ -48,7 +49,7 @@ public class CustomersTest {
     public void testPayNegative() {
 
         String expected = "Paid By: CARD" + "\nTotal: 38.6";
-        String actual = "Paid By: " + customers.getPaymentMethod() + "\nTotal: " + orders.calculateTotal();
+        String actual = "Paid By: " + customers.getPaymentStrategy() + "\nTotal: " + orders.calculateTotal();
 
         assertNotEquals(expected, actual);
     }
