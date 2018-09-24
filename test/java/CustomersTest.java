@@ -3,10 +3,7 @@
  * only, concerning that the customer does what it is supposed to do.
  **/
 
-import ca.dejong.Customers;
-import ca.dejong.OrderItems;
-import ca.dejong.Orders;
-import ca.dejong.PaymentStrategy;
+import ca.dejong.*;
 
 import java.util.List;
 
@@ -31,25 +28,25 @@ public class CustomersTest {
         ordersItem.add(new OrderItems("IB03", 12.4));
 
         orders = new Orders(ordersItem);
-        customers = new Customers("Joe", "0834124625", "Tralee", orders, PaymentStrategy.CASH);
+        customers = new Customers("Joe", "0834124625", "Tralee", orders);
     }
 
-    /** Positive Testing **/
+    /** Pay By Cash Testing **/
     @Test
-    public void testPayPositive() {
+    public void testPayByCash() {
 
-        String expected = "Paid By: CASH" + "\nTotal: 37.6";
-        String actual = "Paid By: " + customers.getPaymentStrategy() + "\nTotal: " + orders.calculateTotal();
+        String expected = "Payment: € 37.6 paid by cash.";
+        String actual = customers.pay(new CashStrategy());
 
         assertEquals(expected, actual);
     }
 
-    /** Negative Testing **/
+    /** Pay By Card Testing **/
     @Test
-    public void testPayNegative() {
+    public void testPayByCard() {
 
-        String expected = "Paid By: CARD" + "\nTotal: 38.6";
-        String actual = "Paid By: " + customers.getPaymentStrategy() + "\nTotal: " + orders.calculateTotal();
+        String expected = "Payment € 37.6 paid by card.\n" + "Card Details:\n Card Holder: John Doe\nCard Number: 4359874785145685\nCVV: 000\nExpiry Date: 12/20";
+        String actual = customers.pay(new CreditCardStrategy("John Doe", "4359874785145685",000,"12/20"));
 
         assertNotEquals(expected, actual);
     }
