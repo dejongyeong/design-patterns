@@ -1,11 +1,11 @@
 @startuml
 
 interface PaymentStrategy {
-    +pay(amount:double):void
+    +pay(amount:double):String
 }
 
 class CashStrategy {
-    +pay(amount:double):void
+    +pay(amount:double):String
 }
 
 class CreditCardStrategy {
@@ -14,7 +14,7 @@ class CreditCardStrategy {
     -cvv:int
     -expiryDate:String
     +CreditCardStrategy(name:String, cardNumber:String, cvv:int, expiryDate:Date)
-    +pay(amount:double):void
+    +pay(amount:double):String
 }
 
 class Orders {
@@ -47,7 +47,7 @@ class Customers {
     +getAddress():String
     +getOrders():Orders
     +getPaymentMethod():PaymentStrategy
-    +pay():void
+    +pay():String
 }
 
 PaymentStrategy <|.. CashStrategy

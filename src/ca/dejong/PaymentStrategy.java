@@ -1,5 +1,5 @@
-package ca.dejong;/* Static Payment Method */
+package ca.dejong;
 
-public enum PaymentStrategy {
-    CASH, CARD
+public interface PaymentStrategy {
+    String pay(double amount);
 }
