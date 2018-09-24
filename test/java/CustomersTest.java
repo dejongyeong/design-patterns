@@ -1,7 +1,12 @@
-/**Testing of Customers class. Customers can pay for orders according to
+/**Testing of ca.dejong.Customers class. ca.dejong.Customers can pay for orders according to
  * different payment method. We are interested in testing the customer class
  * only, concerning that the customer does what it is supposed to do.
  **/
+
+import ca.dejong.Customers;
+import ca.dejong.OrderItems;
+import ca.dejong.Orders;
+import ca.dejong.PaymentMethod;
 
 import java.util.List;
 import org.junit.Test;
@@ -25,7 +30,7 @@ public class CustomersTest {
         ordersItem.add(new OrderItems("IB03", 12.4));
 
         orders = new Orders(ordersItem);
-        customers = new Customers("Joe", "joe@gmail.com", "0834124625", "Tralee", orders, PaymentMethod.CASH);
+        customers = new Customers("Joe", "0834124625", "Tralee", orders, PaymentMethod.CASH);
     }
 
     /** Positive Testing **/

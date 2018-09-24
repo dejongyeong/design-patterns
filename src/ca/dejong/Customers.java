@@ -1,18 +1,20 @@
-/* Customer Class*/
+/**
+ * Customer Class
+ * Assume that each Customer has only one order.
+ **/
+package ca.dejong;
 
 public class Customers {
 
     /* attributes */
     private String name;
-    private String email;
     private String contact;
     private String address;
     private Orders order;
     private PaymentMethod paymentMethod;
 
-    public Customers(String name, String email, String contact, String address, Orders order, PaymentMethod paymentMethod) {
+    public Customers(String name, String contact, String address, Orders order, PaymentMethod paymentMethod) {
         this.name = name;
-        this.email = email;
         this.contact = contact;
         this.address = address;
         this.order = order;
@@ -21,8 +23,6 @@ public class Customers {
 
     /* Getters Method */
     public String getName() { return name; }
-
-    public String getEmail() { return email; }
 
     public String getContact() { return contact; }
 

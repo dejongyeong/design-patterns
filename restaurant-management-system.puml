@@ -19,51 +19,51 @@
 '    +info(amount:double):String
 '}
 
-class Orders {
+class ca.dejong.Orders {
     -orderItems:List
-    +Orders(orderItems:OrderItems)
-    +addItems(orderItems:OrderItems):void
-    +removeItems(orderItems:OrderItems):void
+    +ca.dejong.Orders(orderItems:ca.dejong.OrderItems)
+    +addItems(orderItems:ca.dejong.OrderItems):void
+    +removeItems(orderItems:ca.dejong.OrderItems):void
     +getOrderItems():List
     +calculateTotal():double
 }
 
-class OrderItems {
+class ca.dejong.OrderItems {
     -itemCode:String
     -price:double
-    +OrderItems(itemCode:String, price:double)
+    +ca.dejong.OrderItems(itemCode:String, price:double)
     +getItemCode():String
     +getPrice():double
 }
 
-class Customers {
+class ca.dejong.Customers {
     -name:String
     -email:String
     -contact:String
     -address:String
-    -orders:Orders
-    -paymentMethod:PaymentMethod
-    +Customers(name:String, email:String, contact:String, address:String, orders:Orders, paymentMethod:PaymentMethod)
+    -orders:ca.dejong.Orders
+    -paymentMethod:ca.dejong.PaymentMethod
+    +ca.dejong.Customers(name:String, email:String, contact:String, address:String, orders:ca.dejong.Orders, paymentMethod:ca.dejong.PaymentMethod)
     +getName():String
     +getEmail():String
     +getContact():String
     +getAddress():String
-    +getOrders():Orders
-    +getPaymentMethod():PaymentMethod
+    +getOrders():ca.dejong.Orders
+    +getPaymentMethod():ca.dejong.PaymentMethod
     +pay():void
 }
 
-enum PaymentMethod {
+enum ca.dejong.PaymentMethod {
     CASH
     CARD
 }
 
 'PaymentStrategy <|.. CashStrategy
 'PaymentStrategy <|.. CreditCardStrategy
-'Orders *-- PaymentStrategy
-Orders "1" -- "Many" OrderItems : Has
-Customers *-- Orders
-Customers -- PaymentMethod
+'ca.dejong.Orders *-- PaymentStrategy
+ca.dejong.Orders "1" -- "Many" ca.dejong.OrderItems : Has
+ca.dejong.Customers *-- ca.dejong.Orders
+ca.dejong.Customers -- ca.dejong.PaymentMethod
 
 @enduml
 

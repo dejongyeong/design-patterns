@@ -1,4 +1,5 @@
-/* Orders Class */
+/** Orders Class **/
+package ca.dejong;
 
 import java.util.List;
 

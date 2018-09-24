@@ -1,4 +1,8 @@
-/* Each order has at least one or many order items */
+/**
+ * OrderItems Class
+ * Each order has at least one or many order items.
+ **/
+package ca.dejong;/* Each order has at least one or many order items */
 
 public class OrderItems {
 
