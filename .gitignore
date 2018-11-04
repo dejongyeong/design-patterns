@@ -1,6 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 # IntelliJ project files
-/out
-*.class
-*.classpath
+/online-shopping/target
