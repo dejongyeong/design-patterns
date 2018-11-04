@@ -1,0 +1,29 @@
+@startuml
+
+'Concrete Class
+class com.dejong.discount.BlueMembership {
+    - THREE_PERCENT:double
+    + calculate(double sum):double
+}
+class com.dejong.discount.SilverMembership {
+    - FIVE_PERCENT:double
+    + calculate(double sum):double
+}
+class com.dejong.discount.GoldMembership {
+    - SEVEN_PERCENT:double
+    + calculate(double sum):double
+}
+
+'Interface
+interface com.dejong.discount.IDiscountStrategy << interface >> {
+    + calculate(double sum):double
+}
+
+'Relationships
+com.dejong.shopping.ShoppingCart --o com.dejong.discount.IDiscountStrategy : aggregation
+com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.BlueMembership : implements
+com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.SilverMembership : implements
+com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.GoldMembership : implements
+
+
+@enduml
