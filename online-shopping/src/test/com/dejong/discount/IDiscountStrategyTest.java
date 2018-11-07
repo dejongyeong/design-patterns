@@ -8,10 +8,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class IDiscountStrategyTest {
 
-    @Mock
+    @Mock // Mocks IDiscountStrategy interface.
     private IDiscountStrategy discount = mock(IDiscountStrategy.class);
 
-    @InjectMocks
+    @InjectMocks // Inject mocks that are created with @Mock annotations into instance of class.
     private BlueMembership blueMembership = new BlueMembership();
 
     @InjectMocks
@@ -19,6 +19,9 @@ class IDiscountStrategyTest {
 
     @InjectMocks
     private GoldMembership goldMembership = new GoldMembership();
+
+    @InjectMocks
+    private NoMembership noMembership = new NoMembership();
 
     @Test
     public void testBlueMembership() {
@@ -36,5 +39,11 @@ class IDiscountStrategyTest {
     public void testGoldMembership() {
         when(discount.calculate(100)).thenReturn(93.00); // 7% Discount Set Behavior
         assertEquals(goldMembership.calculate(100.00), 93.00);
+    }
+
+    @Test
+    public void testNoMembership() {
+        when(discount.calculate(100)).thenReturn(100.00);
+        assertEquals(noMembership.calculate(100.00), 100.00);
     }
 }

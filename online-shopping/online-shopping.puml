@@ -13,6 +13,15 @@ class com.dejong.discount.GoldMembership {
     - SEVEN_PERCENT:double
     + calculate(double sum):double
 }
+class com.dejong.discount.NoMembership {
+    - NO_PERCENT:double
+    + calculate(double sum):double
+}
+class com.dejong.member.Member {
+    - iDiscountStrategy:IDiscountStrategy
+    + Member(IDiscountStrategy iDiscountStrategy)
+    + setDiscountStrategy(IDiscountStrategy iDiscountStrategy):void
+}
 
 'Interface
 interface com.dejong.discount.IDiscountStrategy << interface >> {
@@ -20,10 +29,11 @@ interface com.dejong.discount.IDiscountStrategy << interface >> {
 }
 
 'Relationships
-com.dejong.shopping.ShoppingCart --o com.dejong.discount.IDiscountStrategy : aggregation
+com.dejong.member.Member --o com.dejong.discount.IDiscountStrategy : aggregation
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.BlueMembership : implements
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.SilverMembership : implements
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.GoldMembership : implements
+com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.NoMembership : implements
 
 
 @enduml

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5655a71c-cbb7-4a64-8ac0-a88abcf8a3d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-shopping/online-shopping.puml" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/online-shopping.puml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/online-shopping/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,12 +55,18 @@
     <session id="-803181061">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.34" value="2" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -69,8 +74,8 @@
           <entry key="discount" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="19" />
-          <entry key="puml" value="4" />
+          <entry key="java" value="28" />
+          <entry key="puml" value="6" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -78,8 +83,8 @@
         <counts>
           <entry key="Git file" value="2" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="19" />
-          <entry key="PlantUML file" value="4" />
+          <entry key="JAVA" value="28" />
+          <entry key="PlantUML file" value="6" />
           <entry key="UML" value="1" />
           <entry key="XML" value="4" />
         </counts>
@@ -88,34 +93,24 @@
         <counts>
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="32" />
-          <entry key="java" value="2164" />
-          <entry key="puml" value="535" />
+          <entry key="java" value="2850" />
+          <entry key="puml" value="944" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="32" />
-          <entry key="JAVA" value="2164" />
+          <entry key="JAVA" value="2850" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="PlantUML file" value="535" />
+          <entry key="PlantUML file" value="944" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,12 +139,15 @@
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/GoldMembership.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/test/com/dejong/discount/TDiscount.java" />
         <option value="$PROJECT_DIR$/online-shopping/pom.xml" />
-        <option value="$PROJECT_DIR$/online-shopping/src/test/com/dejong/discount/IDiscountStrategyTest.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/shopping/OnlineShopping.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/IDiscountStrategy.java" />
-        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/shopping/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/NoMembership.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/test/com/dejong/discount/IDiscountStrategyTest.java" />
         <option value="$PROJECT_DIR$/online-shopping/online-shopping.puml" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/shopping/ShoppingCart.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/member/Members.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/member/Member.java" />
       </list>
     </option>
   </component>
@@ -167,8 +165,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -221,6 +219,39 @@
               <item name="dejong" type="462c0819:PsiDirectoryNode" />
               <item name="discount" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dejong" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dejong" type="462c0819:PsiDirectoryNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="discount" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -233,17 +264,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541358034582" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541631841033" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -265,26 +296,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ShoppingCart">
+  <component name="RunManager" selected="JUnit.IDiscountStrategyTest">
     <configuration name="ShoppingCart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dejong.shopping.ShoppingCart" />
       <module name="online-shopping" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dejong.shopping.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dejong.Test" />
-      <module name="online-shopping" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dejong.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -322,6 +340,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IDiscountStrategyTest.testNoMembership" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online-shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dejong.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dejong.discount" />
+      <option name="MAIN_CLASS_NAME" value="com.dejong.discount.IDiscountStrategyTest" />
+      <option name="METHOD_NAME" value="testNoMembership" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IDiscountStrategyTest.testSilverMembership" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="online-shopping" />
       <extension name="coverage">
@@ -339,19 +373,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.IDiscountStrategyTest.testBlueMembership" />
       <item itemvalue="JUnit.IDiscountStrategyTest" />
       <item itemvalue="JUnit.IDiscountStrategyTest.testSilverMembership" />
       <item itemvalue="Application.ShoppingCart" />
+      <item itemvalue="JUnit.IDiscountStrategyTest.testNoMembership" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShoppingCart" />
         <item itemvalue="JUnit.IDiscountStrategyTest" />
+        <item itemvalue="JUnit.IDiscountStrategyTest.testNoMembership" />
+        <item itemvalue="Application.ShoppingCart" />
         <item itemvalue="JUnit.IDiscountStrategyTest.testSilverMembership" />
         <item itemvalue="JUnit.IDiscountStrategyTest.testBlueMembership" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -371,17 +405,18 @@
       <workItem from="1541269189317" duration="1258000" />
       <workItem from="1541275768455" duration="5523000" />
       <workItem from="1541348390120" duration="8783000" />
-      <workItem from="1541363813002" duration="45000" />
+      <workItem from="1541363813002" duration="214000" />
+      <workItem from="1541455338059" duration="48000" />
+      <workItem from="1541455460206" duration="21000" />
+      <workItem from="1541543480559" duration="891000" />
+      <workItem from="1541545985363" duration="727000" />
+      <workItem from="1541627287323" duration="313000" />
+      <workItem from="1541627881348" duration="411000" />
+      <workItem from="1541630622875" duration="1796000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IDiscountStrategyTest_testBlueMembership - 2018.11.04 at 17h 19m 16s.xml">
-      <configuration name="IDiscountStrategyTest.testBlueMembership" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IDiscountStrategyTest_testBlueMembership - 2018.11.04 at 17h 19m 52s.xml">
-      <configuration name="IDiscountStrategyTest.testBlueMembership" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IDiscountStrategyTest_testBlueMembership - 2018.11.04 at 17h 20m 29s.xml">
       <configuration name="IDiscountStrategyTest.testBlueMembership" configurationId="JUnit" />
     </history-entry>
@@ -400,9 +435,21 @@
     <history-entry file="IDiscountStrategyTest - 2018.11.04 at 17h 37m 22s.xml">
       <configuration name="IDiscountStrategyTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IDiscountStrategyTest - 2018.11.06 at 23h 02m 50s.xml">
+      <configuration name="IDiscountStrategyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IDiscountStrategyTest - 2018.11.06 at 23h 03m 03s.xml">
+      <configuration name="IDiscountStrategyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IDiscountStrategyTest_testNoMembership - 2018.11.07 at 22h 03m 16s.xml">
+      <configuration name="IDiscountStrategyTest.testNoMembership" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IDiscountStrategyTest - 2018.11.07 at 22h 03m 26s.xml">
+      <configuration name="IDiscountStrategyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18374000" />
+    <option name="totallyTimeSpent" value="22750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,9 +462,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1590604" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2033557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -434,7 +480,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32658958" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Mypy" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29385966" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2933526" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32225433" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -447,7 +493,7 @@
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="right" id="PlantUML" order="10" visible="true" weight="0.4" />
+      <window_info anchor="right" id="PlantUML" order="10" weight="0.5993289" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,13 +518,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping.iml" />
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/Test.java" />
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/GoldMembership.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/SilverMembership.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -515,31 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/discount/IDiscountStrategyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/member/Members.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/shopping/ShoppingCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -557,10 +575,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/GoldMembership.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/discount/NoMembership.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/discount/IDiscountStrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/shopping/ShoppingCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/member/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -640,7 +697,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.hamcrest:hamcrest-core:1.1</last-edited>
+          <last-edited>Maven: net.bytebuddy:byte-buddy-agent:1.7.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
