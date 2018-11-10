@@ -24,25 +24,25 @@ class IDiscountStrategyTest {
     private NoMembership noMembership = new NoMembership();
 
     @Test
-    public void testBlueMembership() {
+    void testBlueMembership() {
         when(discount.calculate(100.00)).thenReturn(97.00); // 3% Discount Set Behavior
         assertEquals(blueMembership.calculate(100.00), 97.00);
     }
 
     @Test
-    public void testSilverMembership() {
+    void testSilverMembership() {
         when(discount.calculate(100)).thenReturn(95.00); // 5% Discount Set Behavior
         assertEquals(silverMembership.calculate(100.00), 95.00);
     }
 
     @Test
-    public void testGoldMembership() {
+    void testGoldMembership() {
         when(discount.calculate(100)).thenReturn(93.00); // 7% Discount Set Behavior
         assertEquals(goldMembership.calculate(100.00), 93.00);
     }
 
     @Test
-    public void testNoMembership() {
+    void testNoMembership() {
         when(discount.calculate(100)).thenReturn(100.00);
         assertEquals(noMembership.calculate(100.00), 100.00);
     }

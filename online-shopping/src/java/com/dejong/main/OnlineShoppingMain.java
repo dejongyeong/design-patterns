@@ -1,7 +1,7 @@
 package com.dejong.main;
 
 import com.dejong.member.Member;
-import com.dejong.newsletters.ShoppingSystem;
+import com.dejong.newsletters.Newsletters;
 
 public class OnlineShoppingMain {
     public static void main(String args[]) {
@@ -9,10 +9,10 @@ public class OnlineShoppingMain {
         Member john = new Member("John", "john@gmail.com", "Dublin");
         Member jonathan = new Member("Jonathan", "jonathan@gmail.com", "Dublin");
 
-        ShoppingSystem shoppingSystem = new ShoppingSystem();
-        shoppingSystem.registerObserver(john);
-        shoppingSystem.registerObserver(jonathan);
+        Newsletters newsletters = new Newsletters();
+        newsletters.registerObserver(john);
+        newsletters.registerObserver(jonathan);
 
-        shoppingSystem.setNews("Hello World");
+        newsletters.setNews("Hello World");
     }
 }

@@ -2,13 +2,13 @@ package com.dejong.newsletters;
 
 import java.util.ArrayList;
 
-/** ShoppingSystem notifies members that subscribes to newsletters */
-public class ShoppingSystem implements ISubject {
+/** Newsletters notifies members that subscribes to newsletters */
+public class Newsletters implements ISubject {
 
     private ArrayList<IObserver> observers;
     private String news;
 
-    public ShoppingSystem() {
+    public Newsletters() {
         observers = new ArrayList<IObserver>();
     }
 

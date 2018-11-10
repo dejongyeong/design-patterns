@@ -35,10 +35,10 @@ class com.dejong.member.Member {
     + update(String news):void
     - display():void
 }
-class com.dejong.newsletters.ShoppingSystem {
+class com.dejong.newsletters.Newsletters {
     - observers:ArrayList<IObserver>
     - news:String
-    + ShoppingSystem()
+    + Newsletters()
     + setObservers(ArrayList<IObserver> observers):void
     + getObservers():ArrayList<IObserver>
     - newsletters():void
@@ -69,7 +69,7 @@ com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.SilverMembership 
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.GoldMembership : implements
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.NoMembership : implements
 com.dejong.newsletters.IObserver <|.. com.dejong.member.Member : implements
-com.dejong.newsletters.ISubject <|.. com.dejong.newsletters.ShoppingSystem : implements
+com.dejong.newsletters.ISubject <|.. com.dejong.newsletters.Newsletters : implements
 com.dejong.newsletters.ISubject --> com.dejong.newsletters.IObserver : observers
 com.dejong.member.Member --> com.dejong.newsletters.ISubject : subject
 
