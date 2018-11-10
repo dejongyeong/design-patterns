@@ -19,13 +19,47 @@ class com.dejong.discount.NoMembership {
 }
 class com.dejong.member.Member {
     - iDiscountStrategy:IDiscountStrategy
-    + Member(IDiscountStrategy iDiscountStrategy)
+    - name:String
+    - email:String
+    - address:String
+    - newsletters:String
+    + Member(String name, String email, String address)
+    + setName(String name):void
+    + setName(String email):void
+    + setName(String address):void
+    + getName(String name):String
+    + getName(String email):String
+    + getName(String address):String
     + setDiscountStrategy(IDiscountStrategy iDiscountStrategy):void
+    + getIDiscountStrategy():IDiscountStrategy
+    + update(String news):void
+    - display():void
+}
+class com.dejong.newsletters.ShoppingSystem {
+    - observers:ArrayList<IObserver>
+    - news:String
+    + ShoppingSystem()
+    + setObservers(ArrayList<IObserver> observers):void
+    + getObservers():ArrayList<IObserver>
+    - newsletters():void
+    + setNews(String news):void
+    + getNews():String
+    + registerObserver(IObserver observer):void
+    + removeObserver(IObserver observer):void
+    + notifyObservers():void
 }
 
 'Interface
 interface com.dejong.discount.IDiscountStrategy << interface >> {
-    + calculate(double sum):double
+    + {abstract} calculate(double sum):double
+}
+interface com.dejong.newsletters.ISubject << interface >> {
+    + {abstract} registerObserver(IObserver observer):void
+    + {abstract} removeObserver(IObserver observer):void
+    + {abstract} notifyObservers():void
+}
+interface com.dejong.newsletters.IObserver << interface >> {
+    + {abstract} update(String news):void
 }
 
 'Relationships
@@ -34,6 +68,9 @@ com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.BlueMembership : 
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.SilverMembership : implements
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.GoldMembership : implements
 com.dejong.discount.IDiscountStrategy <|.. com.dejong.discount.NoMembership : implements
-
+com.dejong.newsletters.IObserver <|.. com.dejong.member.Member : implements
+com.dejong.newsletters.ISubject <|.. com.dejong.newsletters.ShoppingSystem : implements
+com.dejong.newsletters.ISubject --> com.dejong.newsletters.IObserver : observers
+com.dejong.member.Member --> com.dejong.newsletters.ISubject : subject
 
 @enduml
