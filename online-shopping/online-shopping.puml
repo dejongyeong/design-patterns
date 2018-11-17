@@ -19,6 +19,7 @@ class com.dejong.discount.NoMembership {
 }
 class com.dejong.member.Member {
     - iDiscountStrategy:IDiscountStrategy
+    - cart:ShoppingCart
     - name:String
     - email:String
     - address:String
@@ -32,6 +33,7 @@ class com.dejong.member.Member {
     + getName(String address):String
     + setDiscountStrategy(IDiscountStrategy iDiscountStrategy):void
     + getIDiscountStrategy():IDiscountStrategy
+    + getShoppingCart():ShoppingCart
     + update(String news):void
     - display():void
 }
@@ -48,6 +50,44 @@ class com.dejong.newsletters.Newsletters {
     + removeObserver(IObserver observer):void
     + notifyObservers():void
 }
+abstract class com.dejong.delivery.ServicesDecorator << abstract >> {
+    # delivery:IDelivery
+    + ServicesDecorator(IDelivery delivery)
+}
+class com.dejong.delivery.GiftCard {
+    - {static} GIFTCARD:double
+    + GiftCard(IDelivery delivery)
+    + {method} description():String
+    + {method} price():double
+}
+class com.dejong.delivery.Insurances{
+    - {static} INSURANCE:double
+    + Insurances(IDelivery delivery)
+    + {method} description():String
+    + {method} price():double
+}
+class com.dejong.delivery.PrimeDelivery {
+    - {static} PRIME:double
+    + {method} description():String
+    + {method} price():double
+}
+class com.dejong.delivery.StandardDelivery {
+    - {static} STANDARD:double
+    + {method} description():String
+    + {method} price():double
+}
+class com.dejong.delivery.WrappingServices {
+    - {static} WRAPPING:double
+    + WrappingServices(IDelivery delivery)
+    + {method} description():String
+    + {method} price():double
+}
+class com.dejong.cart.ShoppingCart {
+    - delivery:IDelivery
+    + ShoppingCart(IDelivery delivery)
+    + getDescription():String
+    + getCost():double
+}
 
 'Interface
 interface com.dejong.discount.IDiscountStrategy << interface >> {
@@ -61,6 +101,10 @@ interface com.dejong.newsletters.ISubject << interface >> {
 interface com.dejong.newsletters.IObserver << interface >> {
     + {abstract} update(String news):void
 }
+interface com.dejong.delivery.IDelivery << interface >> {
+    + {abstract} description():String
+    + {abstract} price():double
+}
 
 'Relationships
 com.dejong.member.Member --o com.dejong.discount.IDiscountStrategy : aggregation
@@ -72,5 +116,13 @@ com.dejong.newsletters.IObserver <|.. com.dejong.member.Member : implements
 com.dejong.newsletters.ISubject <|.. com.dejong.newsletters.Newsletters : implements
 com.dejong.newsletters.ISubject --> com.dejong.newsletters.IObserver : observers
 com.dejong.member.Member --> com.dejong.newsletters.ISubject : subject
+com.dejong.member.Member "1" *-- com.dejong.cart.ShoppingCart
+com.dejong.cart.ShoppingCart --* "1" com.dejong.delivery.IDelivery : " method"
+com.dejong.delivery.IDelivery <|.. com.dejong.delivery.PrimeDelivery : implements
+com.dejong.delivery.IDelivery <|.. com.dejong.delivery.StandardDelivery : implements
+com.dejong.delivery.IDelivery <|.. com.dejong.delivery.ServicesDecorator : implements
+com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.WrappingServices : extends
+com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.GiftCard : extends
+com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.Insurances : extends
 
 @enduml

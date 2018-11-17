@@ -1,18 +1,16 @@
 package com.dejong.main;
 
-import com.dejong.member.Member;
-import com.dejong.newsletters.Newsletters;
+import com.dejong.cart.ShoppingCart;
+import com.dejong.delivery.*;
 
 public class OnlineShoppingMain {
     public static void main(String args[]) {
 
-        Member john = new Member("John", "john@gmail.com", "Dublin");
-        Member jonathan = new Member("Jonathan", "jonathan@gmail.com", "Dublin");
+        IDelivery delivery = new StandardDelivery();
+        delivery = new Insurances(new GiftCard(new WrappingServices(delivery)));
 
-        Newsletters newsletters = new Newsletters();
-        newsletters.registerObserver(john);
-        newsletters.registerObserver(jonathan);
+        ShoppingCart cart = new ShoppingCart(delivery);
 
-        newsletters.setNews("Hello World");
+        System.out.println(cart.getDescription() + "\nCost: " + cart.getCost());
     }
 }
