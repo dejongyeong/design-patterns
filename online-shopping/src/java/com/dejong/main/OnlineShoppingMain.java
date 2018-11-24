@@ -1,16 +1,16 @@
 package com.dejong.main;
 
-import com.dejong.cart.ShoppingCart;
-import com.dejong.delivery.*;
+import com.dejong.product.AbstractItemFactory;
+import com.dejong.product.ItemFactory;
+import com.dejong.product.Product;
+import com.dejong.product.ProductType;
 
 public class OnlineShoppingMain {
     public static void main(String args[]) {
 
-        IDelivery delivery = new StandardDelivery();
-        delivery = new Insurances(new GiftCard(new WrappingServices(delivery)));
-
-        ShoppingCart cart = new ShoppingCart(delivery);
-
-        System.out.println(cart.getDescription() + "\nCost: " + cart.getCost());
+        AbstractItemFactory factory = new ItemFactory();
+        Product product = factory.order(ProductType.BOOKS);
+        product.setPrice(58.54);
+        System.out.println(product.toString());
     }
 }

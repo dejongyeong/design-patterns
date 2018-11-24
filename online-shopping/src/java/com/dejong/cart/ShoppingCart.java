@@ -1,17 +1,13 @@
 package com.dejong.cart;
 
 import com.dejong.delivery.IDelivery;
-import com.dejong.product.Product;
-import com.dejong.product.ProductSimpleFactory;
 
 public class ShoppingCart {
 
     private IDelivery delivery;
-    private ProductSimpleFactory factory;
 
-    public ShoppingCart(IDelivery delivery, ProductSimpleFactory factory) {
+    public ShoppingCart(IDelivery delivery) {
         this.delivery = delivery;
-        this.factory = factory;
     }
 
     public String getDescription() {
@@ -20,10 +16,5 @@ public class ShoppingCart {
 
     public double getCost() {
         return this.delivery.price();
-    }
-
-    public Product orders(String type) {
-        Product product = ProductSimpleFactory.ordering(type);
-        return product;
     }
 }
