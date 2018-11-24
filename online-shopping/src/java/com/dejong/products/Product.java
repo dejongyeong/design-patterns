@@ -1,10 +1,13 @@
-package com.dejong.product;
+package com.dejong.products;
 
 public abstract class Product {
 
-    String name;
-    String description;
-    double price;
+    protected static final String UNKNOWN = "UNKNOWN";
+    protected static final double NO_VALUE = 0.0;
+
+    protected String name;
+    protected String description;
+    protected double price;
 
     public String getName() {
         return name;
@@ -29,13 +32,4 @@ public abstract class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    public String toString() {
-        return String.format("Product: %s\nName: %s\nDescription: %s\nPrice: %.2f",
-                this.getClass().getSimpleName(),
-                getName(),
-                getDescription(),
-                getPrice());
-    }
-
 }
