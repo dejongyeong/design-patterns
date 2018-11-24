@@ -1,4 +1,6 @@
 package com.dejong.product;
 
-public class Cloth extends Product {
+public class Cloth implements Product {
+
+
 }

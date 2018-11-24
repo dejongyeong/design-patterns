@@ -1,5 +1,5 @@
 package com.dejong.product;
 
-public class Shoe extends Product {
+public class Shoe implements Product {
 
 }
