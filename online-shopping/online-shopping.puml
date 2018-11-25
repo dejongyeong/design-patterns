@@ -84,9 +84,56 @@ class com.dejong.delivery.WrappingServices {
 }
 class com.dejong.cart.ShoppingCart {
     - delivery:IDelivery
-    + ShoppingCart(IDelivery delivery)
+    - ShoeCreator creator;
+    - List<Shoes> items;
+    + ShoppingCart()
+    + setDelivery(IDelivery delivery):void
+    + setCreator(ShoeCreator creator):void
     + getDescription():String
-    + getCost():double
+    + getDeliveryCost():double
+    + createOrder(ShoeType type):Shoes
+    + placeOrder(List<Shoes> items):void
+    + getOrder():List<Shoes>
+}
+class com.dejong.products.FlipFlops {
+    + FlipFlops()
+}
+class com.dejong.products.HighHeels {
+    + HighHeels()
+}
+class com.dejong.products.RunningShoes {
+    + RunningShoes()
+}
+abstract class com.dejong.products.Shoes << abstract >> {
+    ~ name:String
+    ~ description:String
+    ~ price:double
+    ~ size:double
+    + getName():String
+    + getDescription():String
+    + getPrice():double
+    + getSize():double
+    + setName(String name):void
+    + setDescription(String description):void
+    + setPrice(double price):void
+    + setSize(double size):void
+    + toString():String
+}
+abstract class com.dejong.products.ShoeCreator << abstract >> {
+    + {abstract} createProduct(ShoeType type):Shoes
+    + order(ShoeType type):Shoes
+}
+class com.dejong.products.OrderShoe {
+    + createProduct(ShoeType type):Shoes
+}
+enum com.dejong.products.ShoeType << enumeration >> {
+    RUNNING_SHOES
+    HIGH_HEELS
+    FLIP_FLOPS
+}
+class com.dejong.utilities.Utilities {
+    + {static} UNKNOWN:String
+    + {static} NO_VALUE:double
 }
 
 'Interface
@@ -117,6 +164,7 @@ com.dejong.newsletters.ISubject <|.. com.dejong.newsletters.Newsletters : implem
 com.dejong.newsletters.ISubject --> com.dejong.newsletters.IObserver : observers
 com.dejong.member.Member --> com.dejong.newsletters.ISubject : subject
 com.dejong.member.Member "1" *-- com.dejong.cart.ShoppingCart
+com.dejong.products.ShoeCreator --* "1" com.dejong.cart.ShoppingCart
 com.dejong.cart.ShoppingCart --* "1" com.dejong.delivery.IDelivery : " method"
 com.dejong.delivery.IDelivery <|.. com.dejong.delivery.PrimeDelivery : implements
 com.dejong.delivery.IDelivery <|.. com.dejong.delivery.StandardDelivery : implements
@@ -124,5 +172,10 @@ com.dejong.delivery.IDelivery <|.. com.dejong.delivery.ServicesDecorator : imple
 com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.WrappingServices : extends
 com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.GiftCard : extends
 com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.Insurances : extends
+com.dejong.products.Shoes <|-- com.dejong.products.FlipFlops : "extends"
+com.dejong.products.Shoes <|-- com.dejong.products.RunningShoes : "extends"
+com.dejong.products.Shoes <|-- com.dejong.products.HighHeels : "extends"
+com.dejong.products.ShoeCreator <|-- com.dejong.products.OrderShoe : "extends"
+com.dejong.products.Shoes "1..*" <-- com.dejong.products.OrderShoe : "creates"
 
 @enduml

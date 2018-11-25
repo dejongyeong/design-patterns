@@ -1,21 +1,49 @@
 package com.dejong.products;
 
-public class Shoes extends Product {
+public abstract class Shoes {
 
-    private double size;
+    String name;
+    String description;
+    double price;
+    double size;
 
-    public Shoes() {
-        this.name = UNKNOWN;
-        this.description = UNKNOWN;
-        this.size = NO_VALUE;
-        this.price = NO_VALUE;
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public void setSize(double size) {
         this.size = size;
     }
 
-    public double getSize() {
-        return size;
+    public String toString() {
+        return String.format("Type: %s\nName: %s\nDescription: %s\nPrice: €%.2f",
+                this.getClass().getSimpleName(),
+                getName(),
+                getDescription(),
+                getPrice());
     }
 }
