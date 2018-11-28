@@ -132,14 +132,14 @@ class com.dejong.suppliers.Suppliers {
     + getName():String
     + createProduct(ShoeType type):Shoes
 }
-'class com.dejong.display.ProductList {
-'    - items:List<Shoes>
-'    - suppliers:Suppliers
-'    + ProductList(Suppliers suppliers)
-'    + getSuppliers():Suppliers
-'    + addProduct(Shoes item):void
-'    + getProducts():List<Shoes>
-'}
+class com.dejong.display.ProductList {
+    - items:List<Shoes>
+    - suppliers:Suppliers
+    + ProductList(Suppliers suppliers)
+    + getSuppliers():Suppliers
+    + addProduct(Shoes item):void
+    + getProducts():List<Shoes>
+}
 enum com.dejong.products.ShoeType << enumeration >> {
     RUNNING_SHOES
     HIGH_HEELS
@@ -189,14 +189,9 @@ com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.Insurances : exte
 com.dejong.products.Shoes <|-- com.dejong.products.FlipFlops : "extends"
 com.dejong.products.Shoes <|-- com.dejong.products.RunningShoes : "extends"
 com.dejong.products.Shoes <|-- com.dejong.products.HighHeels : "extends"
-<<<<<<< HEAD
-com.dejong.products.ShoeCreator <|-- com.dejong.products.OrderShoe : "extends"
-com.dejong.products.Shoes <-- com.dejong.products.OrderShoe : "creates"
-=======
 com.dejong.products.ShoeCreator <|-- com.dejong.products.CreateShoe : "extends"
 com.dejong.products.Shoes "1..*" <-- com.dejong.products.CreateShoe : "creates"
 com.dejong.products.ShoeCreator --* "1" com.dejong.suppliers.Suppliers
-'com.dejong.display.ProductList *-- com.dejong.suppliers.Suppliers
->>>>>>> 773d851... Refactored previous FM
+com.dejong.display.ProductList *-- com.dejong.suppliers.Suppliers
 
 @enduml

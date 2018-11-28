@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655a71c-cbb7-4a64-8ac0-a88abcf8a3d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-shopping/online-shopping.puml" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/online-shopping.puml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/online-shopping/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,8 +84,8 @@
           <entry key="java" value="531" />
           <entry key="product" value="1" />
           <entry key="products" value="1" />
-          <entry key="puml" value="18" />
-          <entry key="xml" value="5" />
+          <entry key="puml" value="19" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -94,9 +93,9 @@
           <entry key="Git file" value="2" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="531" />
-          <entry key="PlantUML file" value="18" />
+          <entry key="PlantUML file" value="19" />
           <entry key="UML" value="7" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -127,10 +126,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java">
+        <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="310">
+              <caret line="134" selection-start-line="134" selection-end-line="141" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -200,10 +199,10 @@
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/cart/ShoppingCart.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/system/ShoppingSystem.java" />
-        <option value="$PROJECT_DIR$/online-shopping/online-shopping.puml" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/utilities/Utilities.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/ShoeCreator.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java" />
+        <option value="$PROJECT_DIR$/online-shopping/online-shopping.puml" />
       </list>
     </option>
   </component>
@@ -511,7 +510,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95776000" />
+    <option name="totallyTimeSpent" value="95850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,7 +542,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32658958" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Mypy" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22398844" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.30882353" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -556,7 +555,7 @@
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="right" id="PlantUML" order="10" weight="0.38389263" />
+      <window_info anchor="right" id="PlantUML" order="10" visible="true" weight="0.38389263" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
@@ -599,7 +598,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/test/IDelivery.java" />
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/test/StandardDelivery.java" />
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/test/DeliveryDecorator.java" />
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/test/Insurances.java" />
@@ -843,13 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="141" column="2" lean-forward="true" selection-start-line="141" selection-start-column="2" selection-end-line="141" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/utilities/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -894,15 +885,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-795">
-          <caret line="911" column="12" selection-start-line="911" selection-start-column="12" selection-end-line="911" selection-end-column="12" />
+        <state relative-caret-position="304">
+          <caret line="618" column="18" lean-forward="true" selection-start-line="618" selection-start-column="18" selection-end-line="618" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="134" selection-start-line="134" selection-end-line="141" selection-end-column="1" />
         </state>
       </provider>
     </entry>
