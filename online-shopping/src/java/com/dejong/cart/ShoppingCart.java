@@ -13,9 +13,18 @@ public class ShoppingCart {
     private ShoeCreator creator;
     private List<Shoes> items;
 
-    public ShoppingCart() {
+    private static ShoppingCart instance;
+
+    private ShoppingCart() {
         delivery = null;
         creator = null;
+    }
+
+    public static synchronized ShoppingCart getInstance() {
+        if(instance == null) {
+            instance = new ShoppingCart();
+        }
+        return instance;
     }
 
     public void setDelivery(IDelivery delivery) {

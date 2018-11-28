@@ -176,6 +176,6 @@ com.dejong.products.Shoes <|-- com.dejong.products.FlipFlops : "extends"
 com.dejong.products.Shoes <|-- com.dejong.products.RunningShoes : "extends"
 com.dejong.products.Shoes <|-- com.dejong.products.HighHeels : "extends"
 com.dejong.products.ShoeCreator <|-- com.dejong.products.OrderShoe : "extends"
-com.dejong.products.Shoes "1..*" <-- com.dejong.products.OrderShoe : "creates"
+com.dejong.products.Shoes <-- com.dejong.products.OrderShoe : "creates"
 
 @enduml

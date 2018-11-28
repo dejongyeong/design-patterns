@@ -10,7 +10,7 @@ import java.util.List;
 public class OnlineShoppingMain {
     public static void main(String args[]) {
 
-        ShoppingCart cart = new ShoppingCart();
+        ShoppingCart cart = ShoppingCart.getInstance();
         ShoeCreator order = new OrderShoe();
 
         cart.setCreator(order);
