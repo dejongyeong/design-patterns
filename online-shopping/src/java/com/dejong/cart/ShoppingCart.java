@@ -1,23 +1,21 @@
 package com.dejong.cart;
 
 import com.dejong.delivery.IDelivery;
-import com.dejong.products.ShoeCreator;
-import com.dejong.products.ShoeType;
 import com.dejong.products.Shoes;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class ShoppingCart {
 
     private IDelivery delivery;
-    private ShoeCreator creator;
     private List<Shoes> items;
 
     private static ShoppingCart instance;
 
     private ShoppingCart() {
         delivery = null;
-        creator = null;
+        items = new LinkedList<Shoes>();
     }
 
     public static synchronized ShoppingCart getInstance() {
@@ -31,10 +29,6 @@ public class ShoppingCart {
         this.delivery = delivery;
     }
 
-    public void setCreator(ShoeCreator creator) {
-        this.creator = creator;
-    }
-
     public String getDescription() {
         return this.delivery.description();
     }
@@ -43,12 +37,8 @@ public class ShoppingCart {
         return this.delivery.price();
     }
 
-    public Shoes createOrder(ShoeType type) {
-        return creator.order(type);
-    }
-
-    public void placeOrder(List<Shoes> items) {
-        this.items = items;
+    public void placeOrder(Shoes item) {
+        items.add(item);
     }
 
     public List<Shoes> getOrder() {

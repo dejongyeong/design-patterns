@@ -2,13 +2,14 @@ package com.dejong.products;
 
 public abstract class Shoes {
 
-    String name;
+    String brand;
     String description;
     double price;
     double size;
+    int quantity;
 
     public String getName() {
-        return name;
+        return brand;
     }
 
     public String getDescription() {
@@ -23,8 +24,10 @@ public abstract class Shoes {
         return size;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getQuantity() { return quantity; }
+
+    public void setName(String brand) {
+        this.brand = brand;
     }
 
     public void setDescription(String description) {
@@ -39,11 +42,16 @@ public abstract class Shoes {
         this.size = size;
     }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     public String toString() {
-        return String.format("Type: %s\nName: %s\nDescription: %s\nPrice: €%.2f",
+        return String.format("Type: %s\nName: %s\nDescription: %s\nPrice: €%.2f\nQuantity: %d",
                 this.getClass().getSimpleName(),
                 getName(),
                 getDescription(),
-                getPrice());
+                getPrice(),
+                getQuantity());
     }
 }

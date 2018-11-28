@@ -1,6 +1,6 @@
 package com.dejong.products;
 
-public class OrderShoe extends ShoeCreator {
+public class CreateShoe extends ShoeCreator {
 
     Shoes createProduct(ShoeType type) {
         if(type == ShoeType.RUNNING_SHOES) {
