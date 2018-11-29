@@ -9,9 +9,17 @@ import java.util.List;
 public class ProductList {
 
     private List<Shoes> items;
+    private static ProductList INSTANCE;
 
-    public ProductList() {
+    private ProductList() {
         this.items = new LinkedList<Shoes>();
+    }
+
+    public static ProductList getInstance() {
+        if(INSTANCE == null) {
+            INSTANCE = new ProductList();
+        }
+        return INSTANCE;
     }
 
     public void addProduct(Shoes item) {
