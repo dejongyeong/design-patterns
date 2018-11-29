@@ -1,9 +1,6 @@
 package com.dejong.suppliers;
 
-import com.dejong.products.CreateShoe;
-import com.dejong.products.ShoeCreator;
-import com.dejong.products.ShoeType;
-import com.dejong.products.Shoes;
+import com.dejong.products.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,8 +15,8 @@ class SuppliersTest {
 
     @BeforeEach
     void setUp() {
-        suppliers = new Suppliers("Adidas", creator);
         creator = new CreateShoe();
+        suppliers = new Suppliers("Adidas", creator);
     }
 
     @AfterEach
@@ -36,7 +33,7 @@ class SuppliersTest {
 
     @Test
     void testCreateProduct() {
-        Shoes shoe = creator.create(ShoeType.FLIP_FLOPS);
-        assertTrue(shoe instanceof  Shoes);
+        Shoes shoe = suppliers.createShoe(ShoeType.FLIP_FLOPS);
+        assertTrue(shoe instanceof FlipFlops);
     }
 }

@@ -24,7 +24,7 @@ public class Suppliers {
         this.creator = creator;
     }
 
-    public Shoes createProduct(ShoeType type) {
+    public Shoes createShoe(ShoeType type) {
         return creator.create(type);
     }
 }

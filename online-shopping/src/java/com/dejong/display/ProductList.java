@@ -9,15 +9,9 @@ import java.util.List;
 public class ProductList {
 
     private List<Shoes> items;
-    private Suppliers suppliers;
 
-    public ProductList(Suppliers suppliers) {
-        this.suppliers = suppliers;
+    public ProductList() {
         this.items = new LinkedList<Shoes>();
-    }
-
-    public Suppliers getSuppliers() {
-        return suppliers;
     }
 
     public void addProduct(Shoes item) {

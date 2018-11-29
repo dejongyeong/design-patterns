@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655a71c-cbb7-4a64-8ac0-a88abcf8a3d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-shopping/online-shopping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/online-shopping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/online-shopping/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +12,38 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SDP$com_dejong_delivery_in_online_shopping.ic" NAME="com.dejong.delivery in online-shopping Coverage Results" MODIFIED="1543502775420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.delivery.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$IDeliveryPrimeTest.ic" NAME="IDeliveryPrimeTest Coverage Results" MODIFIED="1543502697652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.delivery.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$com_dejong_newsletters_in_online_shopping.ic" NAME="com.dejong.newsletters in online-shopping Coverage Results" MODIFIED="1543502827958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.newsletters.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$com_dejong_discount_in_online_shopping.ic" NAME="com.dejong.discount in online-shopping Coverage Results" MODIFIED="1543502797104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.discount.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$com_dejong_suppliers_in_online_shopping.ic" NAME="com.dejong.suppliers in online-shopping Coverage Results" MODIFIED="1543502842194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.suppliers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$IDeliveryStandardTest.ic" NAME="IDeliveryStandardTest Coverage Results" MODIFIED="1543502727198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.delivery.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$SuppliersTest.ic" NAME="SuppliersTest Coverage Results" MODIFIED="1543503145624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.suppliers.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$com_dejong_display_in_online_shopping.ic" NAME="com.dejong.display in online-shopping Coverage Results" MODIFIED="1543502683572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.display.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDP$ProductListTest.ic" NAME="ProductListTest Coverage Results" MODIFIED="1543502605177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.dejong.display.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="350" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2134375495">
@@ -134,47 +165,48 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="24" />
           <entry key="puml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="24" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="690" />
+          <entry key="java" value="1445" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="690" />
+          <entry key="JAVA" value="1445" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="391">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,8 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/department/Nike.java" />
-        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/department/Book.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/department/Cloth.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/department/Shoe.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/department/Departments.java" />
@@ -242,12 +272,14 @@
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/RunningShoes.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/Shoes.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/cart/ShoppingCart.java" />
-        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/system/ShoppingSystem.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/utilities/Utilities.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/ShoeCreator.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java" />
         <option value="$PROJECT_DIR$/online-shopping/online-shopping.puml" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/test/com/dejong/display/ProductListTest.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java" />
       </list>
     </option>
@@ -351,7 +383,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="dejong" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
+              <item name="suppliers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -365,7 +397,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543500868117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543503335007" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -380,6 +412,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dejong.display" />
       <recent name="com.dejong.suppliers" />
       <recent name="com.dejong.discount" />
     </key>
@@ -400,33 +433,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SuppliersTest">
-    <configuration name="OnlineShoppingMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dejong.main.OnlineShoppingMain" />
-      <module name="online-shopping" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dejong.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IDeliveryStandardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="online-shopping" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dejong.delivery.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dejong.delivery" />
-      <option name="MAIN_CLASS_NAME" value="com.dejong.delivery.IDeliveryStandardTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SuppliersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="online-shopping" />
       <extension name="coverage">
@@ -457,7 +463,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuppliersTest.testGetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.dejong.discount in online-shopping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online-shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dejong.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dejong.discount" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.dejong.newsletters in online-shopping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online-shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dejong.newsletters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dejong.newsletters" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.dejong.suppliers in online-shopping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="online-shopping" />
       <extension name="coverage">
         <pattern>
@@ -466,27 +500,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dejong.suppliers" />
-      <option name="MAIN_CLASS_NAME" value="com.dejong.suppliers.SuppliersTest" />
-      <option name="METHOD_NAME" value="testGetName" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.OnlineShoppingMain" />
-      <item itemvalue="JUnit.IDeliveryStandardTest" />
-      <item itemvalue="JUnit.SuppliersTest.testGetName" />
-      <item itemvalue="JUnit.SuppliersTest" />
+      <item itemvalue="JUnit.com.dejong.discount in online-shopping" />
+      <item itemvalue="JUnit.com.dejong.newsletters in online-shopping" />
+      <item itemvalue="JUnit.com.dejong.suppliers in online-shopping" />
       <item itemvalue="JUnit.SuppliersTest.testCreateProduct" />
+      <item itemvalue="JUnit.SuppliersTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SuppliersTest" />
         <item itemvalue="JUnit.SuppliersTest.testCreateProduct" />
-        <item itemvalue="JUnit.SuppliersTest.testGetName" />
-        <item itemvalue="Application.OnlineShoppingMain" />
-        <item itemvalue="JUnit.IDeliveryStandardTest" />
+        <item itemvalue="JUnit.com.dejong.suppliers in online-shopping" />
+        <item itemvalue="JUnit.com.dejong.newsletters in online-shopping" />
+        <item itemvalue="JUnit.com.dejong.discount in online-shopping" />
       </list>
     </recent_temporary>
   </component>
@@ -524,44 +556,44 @@
       <workItem from="1543163505045" duration="3015000" />
       <workItem from="1543182287152" duration="4157000" />
       <workItem from="1543415251432" duration="1860000" />
-      <workItem from="1543499213788" duration="1635000" />
+      <workItem from="1543499213788" duration="4096000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IDeliveryPrimeTest - 2018.11.17 at 02h 37m 26s.xml">
-      <configuration name="IDeliveryPrimeTest" configurationId="JUnit" />
+    <history-entry file="com_dejong_delivery_in_online-shopping - 2018.11.29 at 14h 46m 17s.xml">
+      <configuration name="com.dejong.delivery in online-shopping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDeliveryPrimeTest - 2018.11.17 at 02h 38m 12s.xml">
-      <configuration name="IDeliveryPrimeTest" configurationId="JUnit" />
+    <history-entry file="com_dejong_discount_in_online-shopping - 2018.11.29 at 14h 46m 39s.xml">
+      <configuration name="com.dejong.discount in online-shopping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDeliveryStandardTest - 2018.11.17 at 02h 38m 49s.xml">
-      <configuration name="IDeliveryStandardTest" configurationId="JUnit" />
+    <history-entry file="com_dejong_newsletters_in_online-shopping - 2018.11.29 at 14h 47m 10s.xml">
+      <configuration name="com.dejong.newsletters in online-shopping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuppliersTest_testGetName - 2018.11.29 at 13h 53m 41s.xml">
-      <configuration name="SuppliersTest.testGetName" configurationId="JUnit" />
+    <history-entry file="com_dejong_suppliers_in_online-shopping - 2018.11.29 at 14h 47m 24s.xml">
+      <configuration name="com.dejong.suppliers in online-shopping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuppliersTest_testGetName - 2018.11.29 at 13h 54m 18s.xml">
-      <configuration name="SuppliersTest.testGetName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SuppliersTest_testGetName - 2018.11.29 at 13h 56m 50s.xml">
-      <configuration name="SuppliersTest.testGetName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SuppliersTest - 2018.11.29 at 13h 56m 55s.xml">
-      <configuration name="SuppliersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SuppliersTest - 2018.11.29 at 13h 57m 20s.xml">
-      <configuration name="SuppliersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SuppliersTest_testCreateProduct - 2018.11.29 at 14h 08m 28s.xml">
+    <history-entry file="SuppliersTest_testCreateProduct - 2018.11.29 at 14h 50m 56s.xml">
       <configuration name="SuppliersTest.testCreateProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SuppliersTest_testCreateProduct - 2018.11.29 at 14h 09m 15s.xml">
+    <history-entry file="SuppliersTest - 2018.11.29 at 14h 51m 01s.xml">
+      <configuration name="SuppliersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuppliersTest - 2018.11.29 at 14h 52m 27s.xml">
+      <configuration name="SuppliersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuppliersTest_testCreateProduct - 2018.11.29 at 14h 52m 42s.xml">
+      <configuration name="SuppliersTest.testCreateProduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuppliersTest_testCreateProduct - 2018.11.29 at 14h 53m 12s.xml">
+      <configuration name="SuppliersTest.testCreateProduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SuppliersTest_testCreateProduct - 2018.11.29 at 14h 55m 01s.xml">
       <configuration name="SuppliersTest.testCreateProduct" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97485000" />
+    <option name="totallyTimeSpent" value="99946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,10 +605,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3358862" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21695095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -584,18 +616,19 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3251445" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26516855" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32480535" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24249166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39884394" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32947975" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32658958" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3259177" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Mypy" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22398844" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2258427" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.30786517" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3070078" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -645,12 +678,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/test/DeliveryDecorator.java" />
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/test/Insurances.java" />
     <entry file="uml://JAVA/com.dejong.delivery">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -716,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/delivery/IDeliveryStandardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="77" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/delivery/IDelivery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -757,20 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/delivery/StandardDelivery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/delivery/GiftCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -870,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/utilities/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -922,6 +951,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/ShoeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/display/ProductListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/delivery/StandardDelivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/delivery/GiftCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/delivery/IDeliveryStandardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/newsletters/Newsletters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/delivery/IDeliveryPrimeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/CreateShoe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -936,34 +1025,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/ShoeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/delivery/IDeliveryPrimeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        <state relative-caret-position="187">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
