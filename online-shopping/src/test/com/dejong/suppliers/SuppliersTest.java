@@ -10,12 +10,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SuppliersTest {
 
-    @Mock ShoeCreator creator;
+    @Mock
+    ShoeFactory creator;
     @Mock Suppliers suppliers;
 
     @BeforeEach
     void setUp() {
-        creator = new CreateShoe();
+        creator = new ShoeCreator();
         suppliers = new Suppliers("Adidas", creator);
     }
 

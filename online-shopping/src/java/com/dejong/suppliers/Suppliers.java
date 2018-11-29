@@ -1,15 +1,15 @@
 package com.dejong.suppliers;
 
-import com.dejong.products.ShoeCreator;
+import com.dejong.products.ShoeFactory;
 import com.dejong.products.ShoeType;
 import com.dejong.products.Shoes;
 
 public class Suppliers {
 
     private String name;
-    private ShoeCreator creator;
+    private ShoeFactory creator;
 
-    public Suppliers(String name, ShoeCreator creator) {
+    public Suppliers(String name, ShoeFactory creator) {
         this.name = name;
         this.creator = creator;
     }
@@ -20,7 +20,7 @@ public class Suppliers {
         this.name = name;
     }
 
-    public void setCreator(ShoeCreator creator) {
+    public void setCreator(ShoeFactory creator) {
         this.creator = creator;
     }
 

@@ -1,7 +1,7 @@
 package com.dejong.display;
 
-import com.dejong.products.CreateShoe;
 import com.dejong.products.ShoeCreator;
+import com.dejong.products.ShoeFactory;
 import com.dejong.products.ShoeType;
 import com.dejong.products.Shoes;
 import com.dejong.suppliers.Suppliers;
@@ -19,7 +19,7 @@ class ProductListTest {
 
     @BeforeEach
     void setUp() {
-        ShoeCreator creator = new CreateShoe();
+        ShoeFactory creator = new ShoeCreator();
         suppliers = new Suppliers("Adidas", creator);
         list = new ProductList();
 

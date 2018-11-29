@@ -7,14 +7,14 @@ import org.junit.jupiter.api.function.Executable;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class ShoeCreatorTest {
+class ShoeFactoryTest {
 
-    private ShoeCreator creator;
+    private ShoeFactory creator;
     private Shoes shoe;
 
     @BeforeEach
     void setUp() {
-        creator = new CreateShoe();
+        creator = new ShoeCreator();
     }
 
     @Test

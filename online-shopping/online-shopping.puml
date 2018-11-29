@@ -116,11 +116,11 @@ abstract class com.dejong.products.Shoes << abstract >> {
     + setSize(double size):void
     + toString():String
 }
-abstract class com.dejong.products.ShoeCreator << abstract >> {
+abstract class com.dejong.products.ShoeFactory << abstract >> {
     + {abstract} createProduct(ShoeType type):Shoes
     + create(ShoeType type):Shoes
 }
-class com.dejong.products.CreateShoe {
+class com.dejong.products.ShoeCreator {
     + createProduct(ShoeType type):Shoes
 }
 class com.dejong.suppliers.Suppliers {
@@ -189,9 +189,9 @@ com.dejong.delivery.ServicesDecorator <|-- com.dejong.delivery.Insurances : exte
 com.dejong.products.Shoes <|-- com.dejong.products.FlipFlops : "extends"
 com.dejong.products.Shoes <|-- com.dejong.products.RunningShoes : "extends"
 com.dejong.products.Shoes <|-- com.dejong.products.HighHeels : "extends"
-com.dejong.products.ShoeCreator <|-- com.dejong.products.CreateShoe : "extends"
-com.dejong.products.Shoes "1..*" <-- com.dejong.products.CreateShoe : "creates"
-com.dejong.products.ShoeCreator --* "1" com.dejong.suppliers.Suppliers
+com.dejong.products.ShoeFactory <|-- com.dejong.products.ShoeCreator : "extends"
+com.dejong.products.Shoes "1..*" <-- com.dejong.products.ShoeCreator : "creates"
+com.dejong.products.ShoeFactory --* "1" com.dejong.suppliers.Suppliers
 com.dejong.display.ProductList *-- com.dejong.suppliers.Suppliers
 
 @enduml
