@@ -9,13 +9,20 @@ import java.util.List;
 public class ProductList {
 
     private List<Shoes> items;
-    private static final ProductList INSTANCE = new ProductList();
+    private volatile static ProductList INSTANCE;
 
     private ProductList() {
         this.items = new LinkedList<Shoes>();
     }
 
     public static ProductList getInstance() {
+        if(INSTANCE == null) {
+            synchronized (ProductList.class) {
+                if(INSTANCE == null) {
+                    INSTANCE = new ProductList();
+                }
+            }
+        }
         return INSTANCE;
     }
 
