@@ -30,10 +30,9 @@ class ProductListTest {
     private void createProduct() {
         Shoes shoe = suppliers.createShoe(ShoeType.FLIP_FLOPS);
 
-        shoe.setName("Adidas Mens Duramo Slide");
+        shoe.setBrand("Adidas Mens Duramo Slide");
         shoe.setDescription("Perfect for beach holidays and poolside workouts, the adidas Duramo Slides are a classic must-have. These black sandals have a clean, quick-drying design for comfort and performance. Finished with iconic 3 Stripes on the strap for signature branded style.");
         shoe.setPrice(22);
-        shoe.setQuantity(10);
 
         list.addProduct(shoe);
     }

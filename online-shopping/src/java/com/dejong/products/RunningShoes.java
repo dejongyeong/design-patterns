@@ -9,7 +9,5 @@ public class RunningShoes extends Shoes {
         this.description = Utilities.UNKNOWN;
         this.size = Utilities.NO_VALUE;
         this.price = Utilities.NO_VALUE;
-        this.quantity = Utilities.NO_QUANTITY;
     }
-
 }
