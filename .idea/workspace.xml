@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655a71c-cbb7-4a64-8ac0-a88abcf8a3d8" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
       <change beforePath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/online-shopping/target/" />
@@ -214,8 +217,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="165">
               <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+=======
+            <state relative-caret-position="225">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
               <folding>
                 <element signature="e#504#505#0" expanded="true" />
                 <element signature="e#535#536#0" expanded="true" />
@@ -312,7 +320,11 @@
       </MavenImportingSettings>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1050" />
@@ -430,7 +442,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543526874532" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543526330714" />
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -590,7 +606,11 @@
       <workItem from="1543415251432" duration="1860000" />
       <workItem from="1543499213788" duration="4096000" />
       <workItem from="1543507919559" duration="5671000" />
+<<<<<<< HEAD
       <workItem from="1543518690250" duration="6819000" />
+=======
+      <workItem from="1543518690250" duration="6301000" />
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
     </task>
     <servers />
   </component>
@@ -627,7 +647,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="112436000" />
+=======
+    <option name="totallyTimeSpent" value="111918000" />
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -642,7 +666,11 @@
     <frame x="-6" y="0" width="781" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20249653" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23717059" />
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1059,8 +1087,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="165">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+=======
+        <state relative-caret-position="225">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+>>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
           <folding>
             <element signature="e#504#505#0" expanded="true" />
             <element signature="e#535#536#0" expanded="true" />
