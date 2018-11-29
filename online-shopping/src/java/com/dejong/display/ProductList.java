@@ -9,16 +9,13 @@ import java.util.List;
 public class ProductList {
 
     private List<Shoes> items;
-    private static ProductList INSTANCE = null;
+    private static final ProductList INSTANCE = new ProductList();
 
     private ProductList() {
         this.items = new LinkedList<Shoes>();
     }
 
-    public static synchronized ProductList getInstance() {
-        if(INSTANCE == null) {
-            INSTANCE = new ProductList();
-        }
+    public static ProductList getInstance() {
         return INSTANCE;
     }
 
