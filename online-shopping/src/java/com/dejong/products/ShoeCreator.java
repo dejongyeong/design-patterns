@@ -2,7 +2,7 @@ package com.dejong.products;
 
 public class ShoeCreator extends ShoeFactory {
 
-    protected Shoes createProduct(ShoeType type) {
+    Shoes createProduct(ShoeType type) {
         if(type == ShoeType.RUNNING_SHOES) {
             return new RunningShoes();
         } else if(type == ShoeType.HIGH_HEELS) {

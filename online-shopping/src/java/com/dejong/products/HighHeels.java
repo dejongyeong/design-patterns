@@ -11,4 +11,11 @@ public class HighHeels extends Shoes {
         this.price = Utilities.NO_VALUE;
     }
 
+    public HighHeels(String brand, String description, double size, double price) {
+        this.brand = brand;
+        this.description = description;
+        this.size = size;
+        this.price = price;
+    }
+
 }

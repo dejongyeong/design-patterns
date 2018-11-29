@@ -94,49 +94,50 @@ class com.dejong.cart.ShoppingCart {
 }
 class com.dejong.products.FlipFlops {
     + FlipFlops()
+    + FlipFlops(String brand, String description, double size, double price)
 }
 class com.dejong.products.HighHeels {
     + HighHeels()
+    + HighHeels(String brand, String description, double size, double price)
 }
 class com.dejong.products.RunningShoes {
     + RunningShoes()
+    + RunningShoes(String brand, String description, double size, double price)
 }
 abstract class com.dejong.products.Shoes << abstract >> {
-    ~ name:String
+    ~ brand:String
     ~ description:String
     ~ price:double
     ~ size:double
-    + getName():String
+    + getBrand():String
     + getDescription():String
     + getPrice():double
     + getSize():double
-    + setName(String name):void
+    + setBrand(String name):void
     + setDescription(String description):void
     + setPrice(double price):void
     + setSize(double size):void
     + toString():String
 }
 abstract class com.dejong.products.ShoeFactory << abstract >> {
-    + {abstract} createProduct(ShoeType type):Shoes
+    ~ {abstract} createProduct(ShoeType type):Shoes
     + create(ShoeType type):Shoes
 }
 class com.dejong.products.ShoeCreator {
-    + createProduct(ShoeType type):Shoes
+    ~ createProduct(ShoeType type):Shoes
 }
 class com.dejong.suppliers.Suppliers {
     - name:String
-    - creator:ShoeCreator
-    + Suppliers(String name, ShoeCreator creator)
+    - creator:ShoeFactory
+    + Suppliers(String name, ShoeFactory creator)
     + setName(String name):void
     + setCreator(ShoeCreator creator):void
     + getName():String
-    + createProduct(ShoeType type):Shoes
+    + createShoe(ShoeType type):Shoes
 }
 class com.dejong.display.ProductList {
     - items:List<Shoes>
-    - suppliers:Suppliers
-    + ProductList(Suppliers suppliers)
-    + getSuppliers():Suppliers
+    + ProductList()
     + addProduct(Shoes item):void
     + getProducts():List<Shoes>
 }
@@ -148,7 +149,6 @@ enum com.dejong.products.ShoeType << enumeration >> {
 class com.dejong.utilities.Utilities {
     + {static} UNKNOWN:String
     + {static} NO_VALUE:double
-    + {static} NO_QUANTITY:int
 }
 
 'Interface
