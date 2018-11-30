@@ -5,32 +5,31 @@ import org.jetbrains.annotations.Contract;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public enum ProductList {
 
     INSTANCE;
 
-    private List<Shoes> items;
+    private Map<String, Shoes> items;
 
     ProductList() {
-        items = new LinkedList<Shoes>();
+        items = new TreeMap<String, Shoes>();
     }
 
-    public void addProduct(Shoes item) {
-        items.add(item);
+    public void addProduct(String id, Shoes item) {
+        items.put(id, item);
     }
 
     @Contract(pure = true)
-    public List<Shoes> getProducts() {
+    public Map<String, Shoes> getProducts() {
         return items;
     }
 
     public void displayProductList() {
-        int count = 1;
-        for(Shoes shoe : this.getProducts()) {
-            System.out.println(count);
-            System.out.println(shoe.toString());
-            count++;
+        for(Map.Entry<String, Shoes> entry : items.entrySet()) {
+            System.out.println(entry.getValue().toString());
         }
     }
 

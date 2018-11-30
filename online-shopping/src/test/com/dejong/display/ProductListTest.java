@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,17 +31,19 @@ class ProductListTest {
     private void createProduct() {
         Shoes shoe = suppliers.createShoe(ShoeType.FLIP_FLOPS);
 
+        shoe.setID("A001");
+        shoe.setSupplier(suppliers.getName());
         shoe.setBrand("Adidas Mens Duramo Slide");
         shoe.setDescription("Perfect for beach holidays and poolside workouts, the adidas Duramo Slides are a classic must-have. These black sandals have a clean, quick-drying design for comfort and performance. Finished with iconic 3 Stripes on the strap for signature branded style.");
         shoe.setPrice(22);
 
-        list.addProduct(shoe);
+        list.addProduct(shoe.getID(), shoe);
     }
 
     /** Ensure List has the items added **/
     @Test
     void testGetProducts() {
-        List<Shoes> items = list.getProducts();
+        Map<String,Shoes> items = list.getProducts();
         assertTrue(items.size() > 0);
     }
 }

@@ -1,5 +1,6 @@
 package com.dejong.member;
 
+import com.dejong.cart.ShoppingCart;
 import com.dejong.newsletters.IObserver;
 
 public class Member implements IObserver {
@@ -8,6 +9,7 @@ public class Member implements IObserver {
     private String email;
     private String address;
     private String newsletters;
+    private ShoppingCart cart;
 
     public Member(String name, String email, String address) {
         this.name = name;
@@ -41,4 +43,12 @@ public class Member implements IObserver {
     }
 
     public String getAddress() { return address; }
+
+    public void setCart(ShoppingCart cart) {
+        this.cart = cart;
+    }
+
+    public ShoppingCart getCart() {
+        return cart;
+    }
 }

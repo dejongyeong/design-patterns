@@ -8,4 +8,8 @@ public class BlueMembershipDiscount extends ProcessOrderTemplate {
         return productTotal - (productTotal * THREE_PERCENT);
     }
 
+    public double getDiscount() {
+        return THREE_PERCENT;
+    }
+
 }

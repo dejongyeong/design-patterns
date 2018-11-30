@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class ShoeTest {
 
     // Testing Purpose
+    private static final String ID = "A001";
     private static final String SUPPLIER = "Adidas";
     private static final String BRAND = "Adidas Originals Swift Run";
     private static final String DESCRIPTION = "Your running regime is upgraded with the Ultraboost - helping you reach the finish line in style. Made to be responsive, they include a 100% Boost midsole that springs into action without adding weight, whilst a Primeknit upper and supportive cage bring a locked down fit.";
@@ -20,6 +21,7 @@ class ShoeTest {
     @BeforeEach
     void init() {
         shoe = new RunningShoes();
+        shoe.setID(ID);
         shoe.setSupplier(SUPPLIER);
         shoe.setBrand(BRAND);
         shoe.setDescription(DESCRIPTION);

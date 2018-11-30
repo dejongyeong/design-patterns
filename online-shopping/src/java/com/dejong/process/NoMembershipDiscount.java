@@ -7,4 +7,8 @@ public class NoMembershipDiscount extends ProcessOrderTemplate {
     protected double calculateDiscount(double productTotal) {
         return productTotal - (productTotal * ZERO_PERCENT);
     }
+
+    public double getDiscount() {
+        return ZERO_PERCENT;
+    }
 }

@@ -6,19 +6,19 @@ import com.dejong.member.MembershipType;
 import com.dejong.process.ProcessOrderTemplate;
 import com.dejong.products.Shoes;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class ShoppingCart {
 
     private IDelivery delivery;
-    private List<Shoes> items;
+    private Map<String, Shoes> items;
     private MembershipSimpleFactory factory;
 
     public ShoppingCart() {
         delivery = null;
         factory = null;
-        items = new LinkedList<Shoes>();
+        items = new TreeMap<String, Shoes>();
     }
 
     public void setMembershipFactory(MembershipSimpleFactory factory) {
@@ -37,11 +37,11 @@ public class ShoppingCart {
         return this.delivery.price();
     }
 
-    public void placeOrder(Shoes item) {
-        items.add(item);
+    public void placeOrder(String id, Shoes item) {
+        items.put(id, item);
     }
 
-    public List<Shoes> getOrder() {
+    public Map<String, Shoes> getOrder() {
         return items;
     }
 

@@ -6,11 +6,12 @@ import com.dejong.products.Shoes;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
+import java.text.NumberFormat;
+import java.util.Map;
 
 public abstract class ProcessOrderTemplate {
 
-    public final void processOrder(List<Shoes> shoes, IDelivery delivery) {
+    public final void processOrder(Map<String,Shoes> shoes, IDelivery delivery) {
         double productTotal = calculateProductTotal(shoes);
         double discountedPrice = calculateDiscount(productTotal);
         double deliveryPrice = calculateDeliveryPrice(delivery);
@@ -18,10 +19,10 @@ public abstract class ProcessOrderTemplate {
         display(sum);
     }
 
-    private double calculateProductTotal(@NotNull List<Shoes> shoes) {
+    private double calculateProductTotal(@NotNull Map<String,Shoes> shoes) {
         double total = 0;
-        for(Shoes shoe : shoes) {
-            total += shoe.getPrice();
+        for(Map.Entry<String, Shoes> entry : shoes.entrySet()) {
+            total += entry.getValue().getPrice();
         }
         return total;
     }
@@ -39,8 +40,12 @@ public abstract class ProcessOrderTemplate {
         return discountedPrice + deliveryPrice;
     }
 
+    protected abstract double getDiscount();
+
     private void display(double sum) {
-        System.out.println("Sum: " + sum);
+        NumberFormat format = NumberFormat.getPercentInstance();
+        String discount = format.format(getDiscount());
+        System.out.println(String.format("Discount: %s\nSum: €%.2f",discount,sum));
     }
 
 }

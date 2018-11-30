@@ -7,4 +7,8 @@ public class GoldMembershipDiscount extends ProcessOrderTemplate {
     protected double calculateDiscount(double productTotal) {
         return productTotal - (productTotal * SEVEN_PERCENT);
     }
+
+    public double getDiscount() {
+        return SEVEN_PERCENT;
+    }
 }

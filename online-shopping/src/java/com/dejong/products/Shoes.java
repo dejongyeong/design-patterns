@@ -4,10 +4,13 @@ import java.io.Serializable;
 
 public abstract class Shoes implements Serializable {
 
-    protected String supplier;
-    protected String brand;
+    String id;
+    String supplier;
+    String brand;
     protected String description;
     protected double price;
+
+    public String getID() { return id; }
 
     public String getBrand() {
         return brand;
@@ -37,8 +40,11 @@ public abstract class Shoes implements Serializable {
 
     public void setSupplier(String supplier) { this.supplier = supplier; }
 
+    public void setID(String id) { this.id = id; }
+
     public String toString() {
-        return String.format("Supplier: %s\nName: %s\nPrice: €%.2f\n",
+        return String.format("ID: %s\nSupplier: %s\nName: %s\nPrice: €%.2f\n",
+                getID(),
                 getSupplier(),
                 getBrand(),
                 getPrice());
