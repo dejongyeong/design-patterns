@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655a71c-cbb7-4a64-8ac0-a88abcf8a3d8" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
+      <change beforePath="$PROJECT_DIR$/online-shopping/online-shopping.puml" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/online-shopping.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-shopping/src/test/com/dejong/display/ProductListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-shopping/src/test/com/dejong/display/ProductListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/online-shopping/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,6 +111,7 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.32" value="3" />
           <entry key="project.open.time.33" value="1" />
@@ -123,7 +123,7 @@
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,10 +133,10 @@
           <entry key="discount" value="2" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="563" />
+          <entry key="java" value="565" />
           <entry key="product" value="1" />
           <entry key="products" value="1" />
-          <entry key="puml" value="23" />
+          <entry key="puml" value="25" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
@@ -144,8 +144,8 @@
         <counts>
           <entry key="Git file" value="2" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="563" />
-          <entry key="PlantUML file" value="23" />
+          <entry key="JAVA" value="565" />
+          <entry key="PlantUML file" value="25" />
           <entry key="UML" value="7" />
           <entry key="XML" value="6" />
         </counts>
@@ -154,17 +154,17 @@
         <counts>
           <entry key="dummy" value="444" />
           <entry key="gitignore" value="32" />
-          <entry key="java" value="24901" />
-          <entry key="puml" value="6198" />
+          <entry key="java" value="24905" />
+          <entry key="puml" value="6538" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="32" />
-          <entry key="JAVA" value="24901" />
+          <entry key="JAVA" value="24905" />
           <entry key="PLAIN_TEXT" value="444" />
-          <entry key="PlantUML file" value="6198" />
+          <entry key="PlantUML file" value="6538" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
@@ -214,22 +214,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="165">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-=======
-            <state relative-caret-position="225">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
-              <folding>
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="195" column="78" selection-start-line="195" selection-start-column="78" selection-end-line="195" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -287,7 +285,6 @@
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/OrderShoe.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/cart/ShoppingCart.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/system/ShoppingSystem.java" />
-        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/suppliers/Suppliers.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/test/com/dejong/suppliers/SuppliersTest.java" />
         <option value="$PROJECT_DIR$/online-shopping/pom.xml" />
@@ -300,10 +297,11 @@
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/ShoeFactory.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/ShoeCreator.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/FlipFlops.java" />
-        <option value="$PROJECT_DIR$/online-shopping/online-shopping.puml" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/HighHeels.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/RunningShoes.java" />
+        <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java" />
         <option value="$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java" />
+        <option value="$PROJECT_DIR$/online-shopping/online-shopping.puml" />
       </list>
     </option>
   </component>
@@ -320,13 +318,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds" extendedState="7">
-=======
   <component name="ProjectFrameBounds" extendedState="6">
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
+    <option name="x" value="3" />
+    <option name="y" value="88" />
+    <option name="width" value="978" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -337,6 +332,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,6 +383,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dejong" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dejong" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -413,40 +419,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dejong" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="design-patterns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="design-patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="online-shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dejong" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543526874532" />
-=======
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543526330714" />
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543539136600" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -482,7 +465,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IDeliveryStandardTest">
+  <component name="RunManager" selected="Application.OnlineShoppingMain">
+    <configuration name="OnlineShoppingMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dejong.main.OnlineShoppingMain" />
+      <module name="online-shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dejong.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IDeliveryPrimeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="online-shopping" />
       <extension name="coverage">
@@ -539,34 +535,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.dejong in online-shopping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="online-shopping" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dejong.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dejong" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.ShoeFactoryTest" />
       <item itemvalue="JUnit.ShoeTest" />
-      <item itemvalue="JUnit.com.dejong in online-shopping" />
       <item itemvalue="JUnit.IDeliveryPrimeTest" />
       <item itemvalue="JUnit.IDeliveryStandardTest" />
+      <item itemvalue="Application.OnlineShoppingMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OnlineShoppingMain" />
         <item itemvalue="JUnit.IDeliveryStandardTest" />
         <item itemvalue="JUnit.IDeliveryPrimeTest" />
         <item itemvalue="JUnit.ShoeTest" />
         <item itemvalue="JUnit.ShoeFactoryTest" />
-        <item itemvalue="JUnit.com.dejong in online-shopping" />
       </list>
     </recent_temporary>
   </component>
@@ -606,11 +588,8 @@
       <workItem from="1543415251432" duration="1860000" />
       <workItem from="1543499213788" duration="4096000" />
       <workItem from="1543507919559" duration="5671000" />
-<<<<<<< HEAD
       <workItem from="1543518690250" duration="6819000" />
-=======
-      <workItem from="1543518690250" duration="6301000" />
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
+      <workItem from="1543532293704" duration="1998000" />
     </task>
     <servers />
   </component>
@@ -647,11 +626,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="112436000" />
-=======
-    <option name="totallyTimeSpent" value="111918000" />
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
+    <option name="totallyTimeSpent" value="114434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,14 +638,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="781" height="840" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20249653" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23717059" />
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17651007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -679,7 +650,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3236994" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34537572" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34537572" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39884394" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -687,7 +658,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3259177" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Mypy" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22424242" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25722542" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.31358382" />
       <window_info anchor="bottom" id="Run with VisualVM" order="13" />
@@ -702,7 +673,7 @@
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="right" id="PlantUML" order="10" weight="0.51342285" />
+      <window_info anchor="right" id="PlantUML" order="10" visible="true" weight="0.3362416" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.40939596" />
     </layout>
     <layout-to-restore>
@@ -902,13 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/delivery/StandardDelivery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1000,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="124" column="1" lean-forward="true" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/products/Shoes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1085,21 +1042,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/main/OnlineShoppingMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/online-shopping/src/java/com/dejong/display/ProductList.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="165">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-=======
-        <state relative-caret-position="225">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
->>>>>>> 0e22537... Singleton Pattern - Lazy Initialization
-          <folding>
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online-shopping/online-shopping.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="195" column="78" selection-start-line="195" selection-start-column="78" selection-end-line="195" selection-end-column="78" />
         </state>
       </provider>
     </entry>

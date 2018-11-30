@@ -135,9 +135,10 @@ class com.dejong.suppliers.Suppliers {
     + getName():String
     + createShoe(ShoeType type):Shoes
 }
-class com.dejong.display.ProductList {
+enum com.dejong.display.ProductList << enumeration >> {
+    INSTANCE
     - items:List<Shoes>
-    + ProductList()
+    ~ ProductList()
     + addProduct(Shoes item):void
     + getProducts():List<Shoes>
 }
@@ -192,6 +193,6 @@ com.dejong.products.Shoes <|-- com.dejong.products.HighHeels : "extends"
 com.dejong.products.ShoeFactory <|-- com.dejong.products.ShoeCreator : "extends"
 com.dejong.products.Shoes "1..*" <-- com.dejong.products.ShoeCreator : "creates"
 com.dejong.products.ShoeFactory --* "1" com.dejong.suppliers.Suppliers
-com.dejong.display.ProductList *-- com.dejong.suppliers.Suppliers
+com.dejong.display.ProductList --> com.dejong.display.ProductList : "instance"
 
 @enduml

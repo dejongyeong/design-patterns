@@ -21,7 +21,7 @@ class ProductListTest {
     void setUp() {
         ShoeFactory creator = new ShoeCreator();
         suppliers = new Suppliers("Adidas", creator);
-        list = new ProductList();
+        list = ProductList.INSTANCE;
 
         // Invoke createShoe Method
         createProduct();
