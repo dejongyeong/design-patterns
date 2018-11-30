@@ -1,6 +1,9 @@
 package com.dejong.cart;
 
 import com.dejong.delivery.IDelivery;
+import com.dejong.member.MembershipSimpleFactory;
+import com.dejong.member.MembershipType;
+import com.dejong.process.ProcessOrderTemplate;
 import com.dejong.products.Shoes;
 
 import java.util.LinkedList;
@@ -10,19 +13,16 @@ public class ShoppingCart {
 
     private IDelivery delivery;
     private List<Shoes> items;
+    private MembershipSimpleFactory factory;
 
-    private static ShoppingCart instance;
-
-    private ShoppingCart() {
+    public ShoppingCart() {
         delivery = null;
+        factory = null;
         items = new LinkedList<Shoes>();
     }
 
-    public static synchronized ShoppingCart getInstance() {
-        if(instance == null) {
-            instance = new ShoppingCart();
-        }
-        return instance;
+    public void setMembershipFactory(MembershipSimpleFactory factory) {
+        this.factory = factory;
     }
 
     public void setDelivery(IDelivery delivery) {
@@ -43,5 +43,10 @@ public class ShoppingCart {
 
     public List<Shoes> getOrder() {
         return items;
+    }
+
+    public void checkout(MembershipType type) {
+        ProcessOrderTemplate template = factory.membership(type);
+        template.processOrder(items, delivery);
     }
 }

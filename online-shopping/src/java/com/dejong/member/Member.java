@@ -1,6 +1,5 @@
 package com.dejong.member;
 
-import com.dejong.discount.IDiscountStrategy;
 import com.dejong.display.ProductList;
 import com.dejong.newsletters.IObserver;
 import com.dejong.products.Shoes;
@@ -11,13 +10,27 @@ public class Member implements IObserver {
     private String email;
     private String address;
     private String newsletters;
-    private IDiscountStrategy iDiscountStrategy;
     private ProductList list = ProductList.INSTANCE;
 
     public Member(String name, String email, String address) {
         this.name = name;
         this.email = email;
         this.address = address;
+    }
+
+    public void update(String news) {
+        this.newsletters = news;
+        this.display();
+    }
+
+    private void display() {
+        System.out.println("Hello " + name + ", today news: " + newsletters);
+    }
+
+    public void displayProductList() {
+        for(Shoes shoe : list.getProducts()) {
+            System.out.println(shoe.toString());
+        }
     }
 
     public void setName(String name) {
@@ -37,25 +50,4 @@ public class Member implements IObserver {
     }
 
     public String getAddress() { return address; }
-
-    public void setDiscountStrategy(IDiscountStrategy iDiscountStrategy) {
-        this.iDiscountStrategy = iDiscountStrategy;
-    }
-
-    public IDiscountStrategy getIDiscountStrategy() { return iDiscountStrategy; }
-
-    public void update(String news) {
-        this.newsletters = news;
-        this.display();
-    }
-
-    private void display() {
-        System.out.println("Hello " + name + ", today news: " + newsletters);
-    }
-
-    public void displayProductList() {
-        for(Shoes shoe : list.getProducts()) {
-            System.out.println(shoe.toString());
-        }
-    }
 }
