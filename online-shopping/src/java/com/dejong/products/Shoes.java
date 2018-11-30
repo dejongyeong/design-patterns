@@ -42,8 +42,7 @@ public abstract class Shoes {
 
 
     public String toString() {
-        return String.format("Type: %s\nName: %s\nDescription: %s\nPrice: €%.2f\n",
-                this.getClass().getSimpleName(),
+        return String.format("Name: %s\nDescription: %s\nPrice: €%.2f\n",
                 getBrand(),
                 getDescription(),
                 getPrice());

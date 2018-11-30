@@ -19,6 +19,7 @@ class com.dejong.discount.NoMembership {
 }
 class com.dejong.member.Member {
     - iDiscountStrategy:IDiscountStrategy
+    - list:ProductList
     - cart:ShoppingCart
     - name:String
     - email:String
@@ -36,6 +37,7 @@ class com.dejong.member.Member {
     + getShoppingCart():ShoppingCart
     + update(String news):void
     - display():void
+    + displayProductList():void
 }
 class com.dejong.newsletters.Newsletters {
     - observers:ArrayList<IObserver>
@@ -193,6 +195,6 @@ com.dejong.products.Shoes <|-- com.dejong.products.HighHeels : "extends"
 com.dejong.products.ShoeFactory <|-- com.dejong.products.ShoeCreator : "extends"
 com.dejong.products.Shoes "1..*" <-- com.dejong.products.ShoeCreator : "creates"
 com.dejong.products.ShoeFactory --* "1" com.dejong.suppliers.Suppliers
-com.dejong.display.ProductList --> com.dejong.display.ProductList : "instance"
+com.dejong.member.Member "1" *-- com.dejong.display.ProductList : has
 
 @enduml
