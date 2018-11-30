@@ -8,7 +8,7 @@ public class SilverMembershipDiscount extends ProcessOrderTemplate {
         return productTotal - (productTotal * FIVE_PERCENT);
     }
 
-    public double getDiscount() {
+    protected double getDiscount() {
         return FIVE_PERCENT;
     }
 }

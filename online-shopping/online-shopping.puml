@@ -96,29 +96,23 @@ class com.dejong.cart.ShoppingCart {
 }
 class com.dejong.products.FlipFlops {
     + FlipFlops()
-    + FlipFlops(String brand, String description, double size, double price)
 }
 class com.dejong.products.HighHeels {
     + HighHeels()
-    + HighHeels(String brand, String description, double size, double price)
 }
 class com.dejong.products.RunningShoes {
     + RunningShoes()
-    + RunningShoes(String brand, String description, double size, double price)
 }
 abstract class com.dejong.products.Shoes << abstract >> {
     ~ brand:String
     ~ description:String
     ~ price:double
-    ~ size:double
     + getBrand():String
     + getDescription():String
     + getPrice():double
-    + getSize():double
     + setBrand(String name):void
     + setDescription(String description):void
     + setPrice(double price):void
-    + setSize(double size):void
     + toString():String
 }
 abstract class com.dejong.products.ShoeFactory << abstract >> {
@@ -152,6 +146,35 @@ enum com.dejong.products.ShoeType << enumeration >> {
 class com.dejong.utilities.Utilities {
     + {static} UNKNOWN:String
     + {static} NO_VALUE:double
+}
+abstract class com.dejong.process.ProcessOrderTemplate {
+    + {static} processOrder(Map<String,Shoes> shoes, IDelivery delivery):void
+    - calculateProductTotal(Map<String,Shoes> shoes):double
+    - calculateDeliveryPrice(IDelivery delivery):double
+    # {abstract} calculateDiscount(double productTotal):double
+    - calculateSum(double discountedPrice, double deliveryPrice):double
+    # {abstract} getDiscount():double
+    - display(double sum)
+}
+class com.dejong.process.BlueMembershipDiscount {
+    - {static} THREE_PERCENT:double
+    # calculateDiscount(double productTotal):double
+    # getDiscount():double
+}
+class com.dejong.process.SilverMembershipDiscount {
+    - {static} FIVE_PERCENT:double
+    # calculateDiscount(double productTotal):double
+    # getDiscount():double
+}
+class com.dejong.process.GoldMembershipDiscount {
+    - {static} SEVEN_PERCENT:double
+    # calculateDiscount(double productTotal):double
+    # getDiscount():double
+}
+class com.dejong.process.NoMembershipDiscount {
+    - {static} ZERO_PERCENT:double
+    # calculateDiscount(double productTotal):double
+    # getDiscount():double
 }
 
 'Interface
@@ -196,5 +219,12 @@ com.dejong.products.ShoeFactory <|-- com.dejong.products.ShoeCreator : "extends"
 com.dejong.products.Shoes "1..*" <-- com.dejong.products.ShoeCreator : "creates"
 com.dejong.products.ShoeFactory --* "1" com.dejong.suppliers.Suppliers
 com.dejong.member.Member "1" *-- com.dejong.display.ProductList : has
+
+'Ordering Process
+com.dejong.process.ProcessOrderTemplate <|-- com.dejong.process.NoMembershipDiscount : "extends"
+com.dejong.process.ProcessOrderTemplate <|-- com.dejong.process.BlueMembershipDiscount : "extends"
+com.dejong.process.ProcessOrderTemplate <|-- com.dejong.process.SilverMembershipDiscount : "extends"
+com.dejong.process.ProcessOrderTemplate <|-- com.dejong.process.GoldMembershipDiscount : "extends"
+
 
 @enduml
