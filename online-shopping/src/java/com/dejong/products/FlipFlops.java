@@ -5,16 +5,16 @@ import com.dejong.utilities.Utilities;
 public class FlipFlops extends Shoes {
 
     public FlipFlops() {
+        this.supplier = Utilities.UNKNOWN;
         this.brand = Utilities.UNKNOWN;
         this.description = Utilities.UNKNOWN;
-        this.size = Utilities.NO_VALUE;
         this.price = Utilities.NO_VALUE;
     }
 
-    public FlipFlops(String brand, String description, double size, double price) {
+    public FlipFlops(String supplier, String brand, String description, double price) {
+        this.supplier = supplier;
         this.brand = brand;
         this.description = description;
-        this.size = size;
         this.price = price;
     }
 

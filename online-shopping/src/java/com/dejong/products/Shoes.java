@@ -1,11 +1,13 @@
 package com.dejong.products;
 
-public abstract class Shoes {
+import java.io.Serializable;
 
+public abstract class Shoes implements Serializable {
+
+    protected String supplier;
     protected String brand;
     protected String description;
     protected double price;
-    protected double size;
 
     public String getBrand() {
         return brand;
@@ -15,14 +17,11 @@ public abstract class Shoes {
         return description;
     }
 
+    public String getSupplier() { return supplier; }
+
     public double getPrice() {
         return price;
     }
-
-    public double getSize() {
-        return size;
-    }
-
 
     public void setBrand(String brand) {
         this.brand = brand;
@@ -36,15 +35,12 @@ public abstract class Shoes {
         this.price = price;
     }
 
-    public void setSize(double size) {
-        this.size = size;
-    }
-
+    public void setSupplier(String supplier) { this.supplier = supplier; }
 
     public String toString() {
-        return String.format("Name: %s\nDescription: %s\nPrice: €%.2f\n",
+        return String.format("Supplier: %s\nName: %s\nPrice: €%.2f\n",
+                getSupplier(),
                 getBrand(),
-                getDescription(),
                 getPrice());
     }
 }
