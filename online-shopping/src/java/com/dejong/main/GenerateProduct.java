@@ -14,7 +14,7 @@ public class GenerateProduct {
     private ProductList shoeList = ProductList.INSTANCE;
     private ShoeFactory factory = new ShoeCreator();
 
-    private final void saveProduct() throws IOException {
+    private void saveProduct() throws IOException {
         generateAdidas();
         generateNike();
         generateTimberland();
