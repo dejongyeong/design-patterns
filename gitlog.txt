@@ -1,0 +1,48 @@
+92637b9 Include UML Diagram in PNG Format
+a0870c6 UML Class Diagram Completion
+7501ec0 UML Diagram of Template Method
+d696b37 Working Online Shopping System
+b9d68e1 Serialization and Deserialization of Singleton Class
+1009461 Implement Template Method for checkout process
+739736f UML Class Diagram and Association Relationship
+4c4d10d Sington Pattern - Enumeration implementation with UML
+ed927f8 Singleton Pattern - Double-Checked Locking Principle
+d4cef0b Singleton Pattern - Eagerly Initialization
+35a2c76 Singleton Pattern - Lazy Initialization
+a21ee3d Singleton Pattern - Classic Implementation
+ed9341b Update UML Class Diagram
+51bfbbe Rename class name for better understanding
+67c8d1e Unit Test products package - successful
+46cd355 Unit test ProductList class
+2fabbda Unit test getName and createProduct method in Suppliers class
+80d4160 Singleton UML Diagram
+b737b01 Refactored previous FM
+10a37e9 Singleton Pattern
+873f56e Factory Method **Better Version**
+be31c52 Product Simple Factory
+1230f4b Factory Method Pattern
+1f01750 Simple Factory
+ea6c5b8 Pre-Design of Factory Pattern
+e94625b Decorator Pattern implemention in Delivery Options including Unit Testing
+0f67507 Unit Test Newsletters Class
+6b00fa5 Observer Pattern Implementation
+23a2fca Final Review of Strategy Pattern
+27d1519 PlantUML
+3987dd1 Strategy Pattern and Mock Testing
+7d73d37 Pre-Design of Discount Implementation
+8d069f6 New Java Package
+b153a69 Dependencies and Update README.md
+ac2e8ce New Idea and Start from Scratch
+dfb5963 Unit Testing
+5c0cfc8 Refactored Code: Strategy Pattern
+3280130 Refactored UML Class Diagram
+0dd1344 Add Package
+b8b73d5 Unit Test Customers class
+9d76af0 Class Creation
+d123a17 Skeleton Code for Customer Test Class
+16c53af Mock Testing Resources Relocation
+9069468 PowerMock Framework
+fb2802c PlantUML Class Diagram
+4788c08 Git Ignore Files
+ac14e3e Add .gitignore file to ignore .class file
+4996bad Initial commit
