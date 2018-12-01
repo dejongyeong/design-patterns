@@ -6,3 +6,5 @@ Online Shopping Implementation adhere to Design Patterns and Design Principles.
 - Observer Pattern
 - Decorator Pattern
 - Factory Pattern
+- Singleton Pattern
+- Template Method Pattern
